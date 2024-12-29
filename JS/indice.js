@@ -30,9 +30,11 @@ function cartasProyectos(){
     let urlImagenesProyecto = "IMAGENES/Proyectos/"
     let urlImagenesLP = "IMAGENES/LP/"
 
+    let listaImagenes = imagenes
     let listaNombres = nombres
     let listaDescripciones = descripciones
     let listaTecnologias = tecnologias
+    let listaUrlProyectos = urlProyectos
 
     $('#contenedorCartasProyectos').empty()
 
@@ -61,7 +63,7 @@ function cartasProyectos(){
             <div class="carta">
                 <!--imagen-->
                 <div>
-                    <img class="carta-imagen-P" src=${urlImagenesProyecto + listaNombres[i] + ".png"} alt=${listaNombres[i]}>
+                    <img class="carta-imagen-P" src=${urlImagenesProyecto + listaImagenes[i] + ".png"} alt=${listaNombres[i]}>
                 </div>
                 <!--descripcion-->
                 <div class="carta-descripcion-P"> 
@@ -78,10 +80,12 @@ function cartasProyectos(){
                 </div>
                 <!--Boton-->
                 <div class="carta-boton-P">
-                    <button>
-                        <i class="bi bi-github fs-3"></i>
-                        <a href="#">Codigo</a>
-                    </button>
+                    <a href=${listaUrlProyectos[i]} target="_blank">
+                        <button>
+                            <i class="bi bi-github fs-3"></i>
+                            Codigo
+                        </button>
+                    </a>
                 </div>
             </div>
         `

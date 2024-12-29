@@ -7,6 +7,12 @@ let lenguajesProgrmacion = [
     "Git",
 ]
 
+let imagenes = [
+    "SistemaGestionEmpleados",
+    "SistemaRestaurantes",
+    "Portafolio",
+]
+
 let nombres = [
     "Sistema de Gestion de Empleados",
     "Sistema para Restaurantes",
@@ -23,4 +29,10 @@ let tecnologias = [
     ["CSharp"],
     ["HTML", "CSS", "JS", "CSharp", "SQL"],
     ["HTML", "CSS", "JS"],
+]
+
+let urlProyectos = [
+    "https://github.com/SQuirosDev/Sistema-de-Gestion-de-Empleados",
+    "https://github.com/SQuirosDev/Sistema-para-Restaurantes",
+    "https://github.com/SQuirosDev/SQuirosDev.github.io"
 ]

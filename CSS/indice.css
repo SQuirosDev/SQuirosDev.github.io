@@ -129,10 +129,12 @@ button:hover{
 /*Navbar*/
 
 .menu {
+    margin-top: 20px;
     margin-bottom: 10px;
     background-color: #101010;
     padding: 10px 20px;
     box-shadow: 0 0 5px rgb(255, 255, 255);
+    padding-top: 20px;
 }
 
 .menu ul {
@@ -370,12 +372,12 @@ footer .copyright {
     }
 
     .carta-descripcion-P h3{
-        font-size: 11px;
+        font-size: 12px;
         height: auto;
     }
 
     .carta-descripcion-P p{
-        font-size: 10px;
+        font-size: 12px;
         width: 100%;
         height: auto;
     }

@@ -57,7 +57,7 @@
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 576px) { 
     .coin{
-        width: 55px;;
-        height: 55px;
+        width: 80px;;
+        height: 80px;
     }
 }
