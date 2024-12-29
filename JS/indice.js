@@ -1,3 +1,25 @@
+function copiarCorreo() {
+    const correo = 'se13.quiros@gmail.com'; // Reemplaza con tu correo
+    navigator.clipboard.writeText(correo)
+        .then(() => alert('Correo copiado al portapapeles'))
+        .catch(err => alert('Error al copiar el correo'));
+}
+
+function copiarTelefono() {
+    const telefono = '84441313'; // Reemplaza con tu número de teléfono
+    navigator.clipboard.writeText(telefono)
+        .then(() => alert('Teléfono copiado al portapapeles'))
+        .catch(err => alert('Error al copiar el teléfono'));
+}
+
+function descargarCV() {
+    const link = document.createElement('a');
+    link.href = 'https://squirosdev.github.io/DOCUMENTOS/CV.pdf'; // URL del archivo PDF
+    link.download = 'CV.pdf'; // Nombre del archivo al descargar
+    link.click();
+    alert('CV descargado correctamente');
+}
+
 function monedasLP(){
     let urlImagenesLP = "IMAGENES/LP/"
 

@@ -40,6 +40,7 @@
                     <li><a class="menu-item" href="index.html">Inicio</a></li>
                     <li><a class="menu-item" href="sobreMi.html">Sobre Mi</a></li>
                     <li><a class="menu-item" href="proyectos.html">Proyectos</a></li>
+                    <li><a class="menu-item" href="DOCUMENTOS/CV.pdf" target="_blank">CV</a></li>
                 </ul>
             </nav>
 
@@ -78,23 +79,38 @@
                     <h1>Contacto</h1>
                 </div>
                 <div class="row">
-                    <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="col-sm-12 col-md-3 col-lg-3">
                         <h2>Redes</h2>
                         <div class="flex-padre-S">
                             <a href="https://www.linkedin.com/in/sebastian-quiros/" target="_blank"><div class="contacto-icon"><i class="bi bi-linkedin fs-3"></i></div></a>
                             <a href="https://github.com/SQuirosDev" target="_blank"><div class="contacto-icon"><i class="bi bi-github fs-3"></i></div></a>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="col-sm-12 col-md-3 col-lg-3">
                         <h2>Correo</h2>
                         <div class="flex-padre-S">
-                            <div><p class="contacto-texto">se13.quiros@gmail.com</p></div>
+                            <div class="div-contacto-texto">
+                                <p class="contacto-texto">se13.quiros@gmail.com</p>
+                                <button class="boton-contacto-texto" onclick="copiarCorreo()"><i class="bi bi-copy fs-4"></i></button>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="col-sm-12 col-md-3 col-lg-3">
                         <h2>Numero</h2>
                         <div class="flex-padre-S">
-                            <div><p class="contacto-texto">8444-1313</p></div>
+                            <div class="div-contacto-texto">
+                                <p class="contacto-texto">8444 - 1313</p>
+                                <button class="boton-contacto-texto" onclick="copiarTelefono()"><i class="bi bi-copy fs-4"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <h2>CV</h2>
+                        <div class="flex-padre-S">
+                            <div class="div-contacto-texto">
+                                <button class="boton-CV" onclick="">CV</button>
+                                <button class="boton-contacto-texto" onclick="descargarCV()"><i class="bi bi-download fs-4"></i></button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -143,6 +159,8 @@
                         <a class="menu-item" href="sobreMi.html">Sobre mí</a>
                         |
                         <a class="menu-item" href="proyectos.html">Proyectos</a>
+                        |
+                        <a class="menu-item" href="DOCUMENTOS/CV.pdf" target="_blank">CV</a>
                     </nav>
 
                     <div class="flex-padre-F">

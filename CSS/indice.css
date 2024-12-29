@@ -194,6 +194,29 @@ button:hover{
     margin-top: 0px;
 }
 
+.div-contacto-texto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.div-contacto-texto button{
+    margin-left: 10px;
+}
+
+.boton-contacto-texto{
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-CV{
+    width: 100px;
+    height: 52px;
+}
+
 /*-----------------------------------------------------------------------*/
 /*Habilidades*/
 
