@@ -4,7 +4,7 @@ let lenguajesProgrmacion = [
     "HTML",
     "CSS",
     "JS",
-    "Git",
+    "Git"
 ]
 
 let imagenes = [
@@ -16,7 +16,7 @@ let imagenes = [
 let nombres = [
     "Sistema de Gestion de Empleados",
     "Sistema para Restaurantes",
-    "Portafolio",
+    "Portafolio"
 ]
 
 let descripciones = [
