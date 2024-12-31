@@ -56,6 +56,8 @@ button{
     margin-left: 10px;
     background-color: #1e1f22;
     border: 3px solid #C8A165;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .contacto-texto{
@@ -439,6 +441,7 @@ footer .copyright {
 
     .carta-descripcion-P h3{
         font-size: 12px;
+        width: 100%;
         height: auto;
     }
 
@@ -454,9 +457,14 @@ footer .copyright {
     }
 
     .carta-boton-P{
-        width: 90%;
+        width: 100%;
         height: auto;
     }
+
+    .carta-boton-P button{ /*Boton carta*/
+        width: 100%;
+        height: auto;
+    }    
 
     .contacto-icon{
         padding-top: 5px;
