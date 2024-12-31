@@ -4,6 +4,13 @@ let lenguajesProgrmacion = [
     "HTML",
     "CSS",
     "JS",
+    "SQL"
+]
+
+let herramientas = [
+    "VSCode",
+    "VS",
+    "SQLServer",
     "Git"
 ]
 
@@ -25,11 +32,18 @@ let descripciones = [
     "Proyecto Personal",
 ]
 
-let tecnologias = [
+let tecnologiasLP = [
     ["CSharp"],
     ["HTML", "CSS", "JS", "CSharp", "SQL"],
     ["HTML", "CSS", "JS"],
 ]
+
+let tecnologiasTools = [
+    ["VS"],
+    ["VSCode", "VS", "SQLServer"],
+    ["VSCode"],
+]
+
 
 let urlProyectos = [
     "https://github.com/SQuirosDev/Sistema-de-Gestion-de-Empleados",

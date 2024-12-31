@@ -20,10 +20,14 @@ function descargarCV() {
     alert('CV descargado correctamente');
 }
 
-function monedasLP(){
+function monedas(){
     let urlImagenesLP = "IMAGENES/LP/"
+    let urlImagenesTools = "IMAGENES/Herramientas/"
 
     let listaLP = lenguajesProgrmacion
+    let listaTools = herramientas
+
+    //-----------------------------------------------------------------------------------------
 
     $('#contenedorMonedasLP').empty()
 
@@ -46,16 +50,44 @@ function monedasLP(){
     }
 
     $('#contenedorMonedasLP').append(monedaLP)
+
+    //-----------------------------------------------------------------------------------------
+
+    $('#contenedorMonedasTools').empty()
+
+    let monedaTool = ''
+
+    for(let i = 0; i < listaTools.length; i++){
+
+        monedaTool += `
+            <div class="coin">
+                <div class="coin-inner">
+                    <div class="coin-face front">
+                        <img src=${urlImagenesTools + listaTools[i] + ".png"} alt=${listaTools[i]}>
+                    </div>
+                    <div class="coin-face back">
+                        <span>${listaTools[i]}</span>
+                    </div>
+                </div>
+            </div>
+        `
+    }
+
+    $('#contenedorMonedasTools').append(monedaTool)
+
+    //-----------------------------------------------------------------------------------------
 }
 
 function cartasProyectos(){
     let urlImagenesProyecto = "IMAGENES/Proyectos/"
     let urlImagenesLP = "IMAGENES/LP/"
+    let urlImagenesTools = "IMAGENES/Herramientas/"
 
     let listaImagenes = imagenes
     let listaNombres = nombres
     let listaDescripciones = descripciones
-    let listaTecnologias = tecnologias
+    let listaTecnologias = tecnologiasLP
+    let listaHerramientas = tecnologiasTools
     let listaUrlProyectos = urlProyectos
 
     $('#contenedorCartasProyectos').empty()
@@ -64,10 +96,10 @@ function cartasProyectos(){
 
     for(let i = 0; i < listaNombres.length; i++){
 
-        let monedas = ''
+        let monedasLP = ''
 
         for(let j = 0; j < listaTecnologias[i].length; j++){
-            monedas += `
+            monedasLP += `
                 <div class="coin-P">
                     <div class="coin-inner-P">
                         <div class="coin-face-P front-P">
@@ -80,6 +112,24 @@ function cartasProyectos(){
                 </div>
             `
         }
+
+        let monedasTools = ''
+
+        for(let j = 0; j < listaHerramientas[i].length; j++){
+            monedasTools += `
+                <div class="coin-P">
+                    <div class="coin-inner-P">
+                        <div class="coin-face-P front-P">
+                            <img src=${urlImagenesTools + listaHerramientas[i][j] + ".png"} alt=${listaHerramientas[i][j]}>
+                        </div>
+                        <div class="coin-face-P back-P">
+                            <span>${listaHerramientas[i][j]}</span>
+                        </div>
+                    </div>
+                </div>
+            `
+        }
+
 
         cartaProyecto += `
             <div class="carta">
@@ -95,11 +145,21 @@ function cartasProyectos(){
                     </p>
                 </div>
                 <!--Tecnologias-->
+                <!--Herramientas-->
                 <div class="carta-tecnologia-P">
+                    <h4>Habilidades</h4>
                     <div class="flex-padre-tecnologias-P">
-                        ${monedas}
+                        ${monedasLP}
                     </div>
                 </div>
+                <!--Herramientas-->
+                <div class="carta-tecnologia-P">
+                    <h4>Herramientas</h4>
+                    <div class="flex-padre-tecnologias-P">
+                        ${monedasTools}
+                    </div>
+                </div>
+
                 <!--Boton-->
                 <div class="carta-boton-P">
                     <a href=${listaUrlProyectos[i]} target="_blank">

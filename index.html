@@ -30,8 +30,8 @@
         <script src="JS/indice.js"></script>        
     </head>
 
-    <body onload="monedasLP(), cartasProyectos()">
-        <!--<canvas></canvas>-->
+    <body onload="monedas(), cartasProyectos()">
+        <canvas></canvas>
         <div class="container">
 
             <!--Navbar-->
@@ -50,14 +50,23 @@
                     <img class="user img-fluid" src="../IMAGENES/user.png" alt="Foto de perfil">
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6">
-                    <p>Hola, soy</p>
-                    <h1>Sebastián Quirós Esquivel</h1>
-                    <h2>Ingeniero en sistemas</h2>
+                    <div class="row">
+                        <p>Hola, soy</p>
+                        <h1>Sebastián Quirós Esquivel</h1>
+                        <h2>Ingeniero en sistemas</h2>
+                    </div>
+                    <div class="row">
+                        <div class="flex-padre-I">
+                            <button class="boton-descargar-CV" onclick="descargarCV()">Descargar CV</button>
+                            <a href="https://www.linkedin.com/in/sebastian-quiros/" target="_blank"><div class="contacto-icon"><i class="bi bi-linkedin fs-3"></i></div></a>
+                            <a href="https://github.com/SQuirosDev" target="_blank"><div class="contacto-icon"><i class="bi bi-github fs-3"></i></div></a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <!--Sobre mi-->
-            <div class="row secciones">
+            <div class="row seccion-S">
                 <div class="row">
                     <h1>Sobre Mi</h1>
                 </div>
@@ -70,7 +79,7 @@
                         proyectos, siempre buscando mejorar y crecer como profesional en el campo de la tecnología.                
                     </p>
                 </div>
-                <div>
+                <div class="row">
                     <a href="sobreMi.html">
                         <button>Más Informacion</button>
                     </a>
@@ -79,14 +88,14 @@
                     <h1>Contacto</h1>
                 </div>
                 <div class="row">
-                    <div class="col-sm-12 col-md-3 col-lg-3">
+                    <div class="col-sm-12 col-md-4 col-lg-4">
                         <h2>Redes</h2>
                         <div class="flex-padre-S">
                             <a href="https://www.linkedin.com/in/sebastian-quiros/" target="_blank"><div class="contacto-icon"><i class="bi bi-linkedin fs-3"></i></div></a>
                             <a href="https://github.com/SQuirosDev" target="_blank"><div class="contacto-icon"><i class="bi bi-github fs-3"></i></div></a>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-3 col-lg-3">
+                    <div class="col-sm-12 col-md-4 col-lg-4">
                         <h2>Correo</h2>
                         <div class="flex-padre-S">
                             <div class="div-contacto-texto">
@@ -95,7 +104,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-3 col-lg-3">
+                    <div class="col-sm-12 col-md-4 col-lg-4">
                         <h2>Numero</h2>
                         <div class="flex-padre-S">
                             <div class="div-contacto-texto">
@@ -104,20 +113,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-3 col-lg-3">
-                        <h2>CV</h2>
-                        <div class="flex-padre-S">
-                            <div class="div-contacto-texto">
-                                <a href="DOCUMENTOS/CV.pdf" target="_blank"><button class="boton-CV">CV</button></a>
-                                <button class="boton-contacto-texto" onclick="descargarCV()"><i class="bi bi-download fs-4"></i></button>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
 
-            <!--Habilidades-->
-            <div class="row secciones">
+            <!--Habilidades y Herramientas-->
+            <div class="row seccion-H">
                 <div class="row">
                     <h1>Habilidades</h1>
                 </div>
@@ -127,10 +127,19 @@
                         
                     </div>
                 </div>
+                <div class="row">
+                    <h1>Herramientas</h1>
+                </div>
+                <div class="row">
+                    <div class="flex-padre-H" id="contenedorMonedasTools">
+                        <!--Monedas-->
+                        
+                    </div>
+                </div>
             </div>
 
             <!--Proyectos-->
-            <div class="row secciones">
+            <div class="row seccion-P">
                 <div class="row">
                     <h1>Proyectos</h1>
                 </div>
@@ -140,7 +149,7 @@
                         
                     </div>
                 </div>
-                <div>
+                <div class="row">
                     <a href="proyectos.html">
                         <button>Más Proyectos</button>
                     </a>

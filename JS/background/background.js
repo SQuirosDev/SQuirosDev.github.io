@@ -5,7 +5,7 @@ canvas.width = innerWidth
 canvas.height = innerHeight
 
 let bolas = []
-for(let i = 0; i < 25; i++){
+for(let i = 0; i < 30; i++){
     let x = Math.random() * canvas.width;  
     let y = Math.random() * canvas.height;
     bolas.push(new Bola(x, y));

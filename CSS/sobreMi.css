@@ -9,23 +9,19 @@ body {
 }
 
 canvas {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 0; /* Detrás del contenido */
+    z-index: -1; /* Detrás del contenido */
 }
 
 h1, h3, h4, h5, h6 {
-    margin-top: 0;
-    margin-bottom: 0.5em;
     color: #C8A165;
 }
 
 h2{
-    margin-top: 0;
-    margin-bottom: 0.5em;
     color: white;
 }
 
@@ -35,49 +31,30 @@ p {
     color: white;
 }
 
-button{
-    background-color: #C8A165;               
-    color: white;          
-    border: none;    
-    padding: 10px 20px;    
-    border-radius: 5px; 
-    cursor: pointer;    
-} 
-
-.row.secciones {
-    width: 100%; /* Ancho completo del contenedor principal */
-    min-height: 1200px; /* Altura fija */
+.row.seccion { /*acomodar el contenedor de esta parte*/
+    width: 100%; 
     height: auto;
-    display: flex; /* Centrado del contenido */
+    display: flex; 
     justify-content: center;
     align-items: center;
     text-align: center;
     background-color: #101010;
-    /*border: 2px solid #C8A165;*/
-    box-sizing: border-box; /* Evitar que bordes alteren el tamaño */
-    margin-left: 0.5px; /* Mueve los divs a la derecha */
+    margin-left: 0.5px; 
     margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 10px;
-    box-shadow: 0 0 5px rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 30px;
 }
 
-/* Asegurar que el navbar tenga el mismo ancho que las secciones */
-.menu {
-    width: 100%; /* Ocupa todo el ancho del contenedor */
-    margin: 0 auto; /* Centrar */
-    background-color: black;
-    padding: 10px 20px;
-    box-shadow: 0 4px 6px rgb(255, 255, 255);
+.row.seccion .row{ /*espacio entre filas*/
+    margin-bottom: 30px;
 }
 
 .contacto-icon{
     height: 50px  ;
     width: 50px ;
-    margin: 0px 5px 10px 5px;
-    background-color: black;
-    border: 3px solid #C8A165; /* Borde dorado */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Sombra para profundidad */
+    margin-left: 10px;
+    background-color: #1e1f22;
+    border: 3px solid #C8A165;
 }
 
 .contacto-texto{
@@ -89,12 +66,10 @@ button{
     justify-content: center;
     align-items: center;
     background-color: black;
-    border: 3px solid #C8A165; /* Borde dorado */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Sombra para profundidad */
+    border: 3px solid #C8A165; 
 }
 
-/*Color icono*/
-.bi{
+.bi{ /*Color icono*/
     color: white;
 }
 
@@ -106,12 +81,12 @@ button:hover{
 /*Navbar*/
 
 .menu {
+    width: 100%;
     margin-top: 20px;
-    margin-bottom: 10px;
     background-color: #101010;
     padding: 10px 20px;
-    box-shadow: 0 0 5px rgb(255, 255, 255);
-    padding-top: 20px;
+    padding-top: 25px;
+    border-radius: 50px;
 }
 
 .menu ul {
@@ -262,7 +237,7 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    border-top: 2px solid #C8A165 /*linea*/;
+    border-top: 2px solid #C8A165; /*linea*/
     margin-top: 50px;
 }
 
@@ -310,22 +285,22 @@ footer .copyright {
     color: #666;
 }
 /*-----------------------------------------------------------------------*/
-
 /* Ajustes para pantallas pequeñas */
+
 @media (max-width: 576px) { 
-    .menu ul {
-        flex-direction: row; /* Menú apilado en móviles */
+    .menu ul { /*ajuste del menu*/
+        flex-direction: row; 
         display: flex;
         justify-content: center;
         align-items: center;
         margin-right: 22px;            
     }
 
-    .menu-item {
-        font-size: 15px; /* Texto más pequeño para menús */
+    .menu-item { /*Texto más pequeño para menús*/
+        font-size: 15px; 
     }
 
-    .row.secciones {
+    .row.seccion {
         
         width: 100%;
         height: auto;
