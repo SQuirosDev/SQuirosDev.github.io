@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Timer</title>
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Workout Timer</h1>
+
+        <div class="input-group">
+            <input
+                type="number"
+                id="exercise"
+                min="1"
+                placeholder="Tiempo de ejercicio (segundos)"
+            >
+        </div>
+
+        <div class="input-group">
+            <input
+                type="number"
+                id="rest"
+                min="1"
+                placeholder="Tiempo de descanso (segundos)"
+            >
+        </div>
+
+        <div class="input-group">
+            <input
+                type="number"
+                id="reps"
+                min="1"
+                placeholder="Número de repeticiones"
+            >
+        </div>
+
+        <h2 id="totalTime" class="total-label">
+            <b>Tiempo total:</b>
+        </h2>
+
+        <div class="buttons">
+            <button id="goTimerBtn" disabled>Ir al temporizador</button>
+        </div>
+    </div>
+
+    <script src="JS/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Timer – Temporizador</title>
+    <link rel="stylesheet" href="CSS/timer.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Workout Timer</h1>
+
+        <h2 id="modeTitle">Preparado</h2>
+
+        <!-- Tiempo del ciclo actual -->
+        <div id="timeDisplay" class="time-display">00:00</div>
+
+        <!-- Tiempo total restante -->
+        <p id="totalRemaining" class="total-label"><b>Tiempo total restante:</b> 00:00</p>
+
+        <!-- Repeticiones completadas -->
+        <p id="repsCompleted" class="total-label"><b>Repeticiones completadas:</b> 0</p>
+
+        <div class="buttons">
+            <button id="startBtn">Iniciar</button>
+            <button id="backBtn">Cancelar Timer</button>
+        </div>
+    </div>
+
+    <script src="JS/timer.js"></script>
+</body>
+</html>
