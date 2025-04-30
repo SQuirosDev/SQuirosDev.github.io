@@ -41,7 +41,7 @@ function flashBackground(color) {
     document.body.style.backgroundColor = color;
     setTimeout(() => {
         document.body.style.backgroundColor = BASE_BG;
-    }, 2000);
+    }, 500);
 }
 
 // Cambiar modo y, si acabó un ciclo de descanso, contar repetición
