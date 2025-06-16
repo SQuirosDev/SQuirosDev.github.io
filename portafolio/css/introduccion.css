@@ -39,4 +39,9 @@
         height: auto;
         margin: 0 auto; 
     }
+
+    .seccion-intro{
+        height: 500px;
+    }
+
 }
