@@ -1,0 +1,59 @@
+/*-----------------------------------------------------------------------*/
+
+/*Sobre Mi*/
+
+.contenedor-s{
+    width: 100%;
+    background-color: #101010;
+    border-radius: 30px;
+    padding: 7px;
+}
+
+.seccion-S { /*acomodar el contenedor de esta parte*/
+    width: 100%;
+    height: auto;
+    background-color: #101010;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.botones-S{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.flex-padre-S{ /*acomoda el contacto icon*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.boton-contacto-texto{ /*da forma el boton y acomoda la imagen de adentro*/
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-CV{ /*da forma el boton CV*/
+    width: 100px;
+    height: 52px;
+}
+
+/*-----------------------------------------------------------------------*/
+
+@media (max-width: 780px) { 
+    .botones-S{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
