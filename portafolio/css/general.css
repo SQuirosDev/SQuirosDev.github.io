@@ -83,6 +83,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 3px;
 }
 
 /*Color icono*/
@@ -128,6 +129,10 @@ ul {
     inset 0 0 5px #00e5ff,      /* interior azul */
     0 0 4px #00e5ff,            /* exterior azul neón */
     0 0 8px #008bb2;
+}
+
+.titulo-tamano {
+    font-size: 22px;
 }
 
 /*==================================================================================================================*/

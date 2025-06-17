@@ -63,7 +63,7 @@
 }
 
 .carta-boton-P button{ /*Boton carta*/
-    width: 360px;
+    width: auto;
     height: auto;
     border-radius: 15px;
 }
@@ -198,7 +198,7 @@
   background: #101010;
   padding: 14px;
   border-radius: 30px;
-  width: 50%;
+  width: 70%;
   height: 90vh;
   position: relative;
   animation: fadeIn 0.3s ease-out;
@@ -300,6 +300,7 @@
 
     .modal-content img {
         width: 100%;
+        height: auto;
         border-radius: 30px;
     }
 }

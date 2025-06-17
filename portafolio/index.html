@@ -46,7 +46,7 @@
         <div class="Container">
 
             <!--Contenedor Full Screen-->
-            <div class="contenedor-intro-nav contenedor-seccion d-flex flex-column gap-5" id="Intro">
+            <div class="contenedor-intro-nav d-flex flex-column gap-5" id="Intro">
 
                 <!--Navbar-->
                 <div class="d-flex justify-content-center">
@@ -81,17 +81,21 @@
                                     <div class="col-12 text-start d-flex flex-column gap-2">
                                         <p>Hola, Soy</p>
                                         <h1 class="tron-text">Sebastián Quirós</h1>
-                                        <h2 class="tron-text">Ingeniero en Sistemas</h2>
+                                        <h2 class="tron-text titulo-tamano">Ingeniero en Sistemas</h2>
                                     </div>
                                 </div>
                                 <!--Botones-->
                                 <div class="row">
-                                    <div class="col-12 d-flex justify-content-start gap-3">
-                                        <button class="boton btn-mediano tron-boton" onclick="descargarCV()">Descargar CV</button>
-                                        <a href="https://www.linkedin.com/in/sebastian-quiros/" target="_blank"><div class="boton btn-pequeno tron-boton"><i class="fa-brands fa-linkedin-in fa-xl icono-blanco"></i></div></a>
-                                        <a href="https://github.com/SQuirosDev" target="_blank"><div class="boton btn-pequeno tron-boton"><i class="fa-brands fa-github fa-xl icono-blanco"></i></div></a>
+                                        <div class="col-sm-12 col-md-6 col-lg-6 mt-1 mb-1">
+                                            <button class="boton btn-mediano tron-boton " onclick="descargarCV()">Descargar CV</button>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-6 mt-1 mb-1">
+                                                <a href="https://www.linkedin.com/in/sebastian-quiros/" target="_blank"><div class="boton btn-pequeno tron-boton"><i class="fa-brands fa-linkedin-in fa-xl icono-blanco"></i></div></a>
+                                                <a href="https://github.com/SQuirosDev" target="_blank"><div class="boton btn-pequeno tron-boton"><i class="fa-brands fa-github fa-xl icono-blanco"></i></div></a>
+                                        </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -104,7 +108,7 @@
                 <div class="contenedor-datos">
 
                     <!--Contenedor Full Screen-->
-                    <div class="contenedor-s seccion-tamano margen-inferior contenedor-seccion d-flex align-items-center text-center tron-box" id="SobreMiYContacto">
+                    <div class="contenedor-s seccion-tamano margen-inferior d-flex align-items-center text-center tron-box" id="SobreMiYContacto">
                         <!--Sobre mi y Contacto-->
                         <div class="seccion-S d-flex justify-content-center flex-column gap-3">
 
@@ -164,7 +168,7 @@
                     </div>
                     
                     <!--Contenedor Full Screen-->
-                    <div class="contenedor-t seccion-tamano contenedor-seccion tron-box d-flex align-items-center text-center" id="HabilidadesYHerramientas">
+                    <div class="contenedor-t seccion-tamano tron-box d-flex align-items-center text-center" id="HabilidadesYHerramientas">
                         <!--Habilidades y Herramientas-->
                         <div class="seccion-T d-flex justify-content-center flex-column gap-3">
 
@@ -193,7 +197,7 @@
                     </div>
 
                     <!--Contenedor Full Screen-->
-                    <div class="contenedor-p seccion-tamano contenedor-seccion tron-box d-flex align-items-center text-center" id="Proyectos">
+                    <div class="contenedor-p seccion-tamano tron-box d-flex align-items-center text-center" id="Proyectos">
                         <!--Proyectos-->
                         <div class="seccion-P d-flex justify-content-center flex-column gap-3">
 
@@ -224,7 +228,7 @@
             </div>
 
             <!--Footer-->
-            <footer class="contenedor-seccion">
+            <footer>
                 <div class="contenedor d-flex flex-column gap-3">
                     <h3 class="tron-text">
                         Sebastián Quirós
@@ -232,11 +236,15 @@
                         Ingeniero en Sistemas
                     </h3>
 
-                    <div class="flex-padre-F">
-                        <button class="boton contacto-texto tron-boton" onclick="copiarCorreo()">se13.quiros@gmail.com</button>
-                        <button class="boton contacto-texto tron-boton" onclick="copiarTelefono()">8444 - 1313</button>
-                        <a href="https://www.linkedin.com/in/sebastian-quiros/" target="_blank"><div class="boton btn-pequeno tron-boton"><i class="fa-brands fa-linkedin-in fa-xl icono-blanco"></i></div></a>
-                        <a href="https://github.com/SQuirosDev" target="_blank"><div class="boton btn-pequeno tron-boton"><i class="fa-brands fa-github fa-xl icono-blanco"></i></div></a>
+                    <div class="row">
+                        <div class="col-12 mb-4">
+                            <button class="boton tron-boton" onclick="copiarCorreo()">se13.quiros@gmail.com</button>
+                            <button class="boton tron-boton" onclick="copiarTelefono()">8444 - 1313</button>
+                        </div>
+                        <div class="col-12">
+                            <a href="https://www.linkedin.com/in/sebastian-quiros/" target="_blank"><div class="boton btn-pequeno tron-boton"><i class="fa-brands fa-linkedin-in fa-xl icono-blanco"></i></div></a>
+                            <a href="https://github.com/SQuirosDev" target="_blank"><div class="boton btn-pequeno tron-boton"><i class="fa-brands fa-github fa-xl icono-blanco"></i></div></a>
+                        </div>
                     </div>
 
                     <div class="d-flex justify-content-center">
@@ -271,13 +279,14 @@
                 </div>
 
                 <!-- Contenedor para botones de acción -->
-                <div id="modal-buttons" class="modal-buttons d-flex justify-content-center flex-row gap-2 inferior" style="margin-top:1rem;">
-                    
+                <div class="d-flex justify-content-center flex-row gap-2">
+                    <div id="modal-buttons" class="modal-buttons inferior">
+                    </div>
                 </div>
             </div>
         </div>
 
-        <script src="js/menuDesplegable.js" defer></script>
+        <script src="js/menu_desplegable.js" defer></script>
 
     </body>
 </html>

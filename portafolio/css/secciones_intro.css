@@ -11,10 +11,6 @@ body {
     scroll-behavior: smooth;
 }
 
-.contenedor-seccion {
-    scroll-snap-align: center;      
-}
-
 .contenedor-datos{
     width: 80%; 
     height: auto;
@@ -26,7 +22,7 @@ body {
 }
 
 .seccion-tamano {
-    height: 90vh;
+    min-height: 90vh;
 }
 
 .margen-inferior{

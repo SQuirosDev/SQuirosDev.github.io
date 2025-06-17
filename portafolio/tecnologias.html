@@ -86,7 +86,7 @@
             </div>
 
             <!--Footer-->
-            <footer class="contenedor-seccion">
+            <footer>
                 <div class="contenedor d-flex flex-column gap-3">
                     <h3 class="tron-text">
                         Sebastián Quirós
@@ -94,11 +94,15 @@
                         Ingeniero en Sistemas
                     </h3>
 
-                    <div class="flex-padre-F">
-                        <button class="boton contacto-texto tron-boton" onclick="copiarCorreo()">se13.quiros@gmail.com</button>
-                        <button class="boton contacto-texto tron-boton" onclick="copiarTelefono()">8444 - 1313</button>
-                        <a href="https://www.linkedin.com/in/sebastian-quiros/" target="_blank"><div class="boton btn-pequeno tron-boton"><i class="fa-brands fa-linkedin-in fa-xl icono-blanco"></i></div></a>
-                        <a href="https://github.com/SQuirosDev" target="_blank"><div class="boton btn-pequeno tron-boton"><i class="fa-brands fa-github fa-xl icono-blanco"></i></div></a>
+                    <div class="row">
+                        <div class="col-12 mb-4">
+                            <button class="boton tron-boton" onclick="copiarCorreo()">se13.quiros@gmail.com</button>
+                            <button class="boton tron-boton" onclick="copiarTelefono()">8444 - 1313</button>
+                        </div>
+                        <div class="col-12">
+                            <a href="https://www.linkedin.com/in/sebastian-quiros/" target="_blank"><div class="boton btn-pequeno tron-boton"><i class="fa-brands fa-linkedin-in fa-xl icono-blanco"></i></div></a>
+                            <a href="https://github.com/SQuirosDev" target="_blank"><div class="boton btn-pequeno tron-boton"><i class="fa-brands fa-github fa-xl icono-blanco"></i></div></a>
+                        </div>
                     </div>
 
                     <div class="d-flex justify-content-center">
@@ -113,6 +117,6 @@
 
         </div>
 
-            <script src="js/menuDesplegable.js" defer></script>
+            <script src="js/menu_desplegable.js" defer></script>
     </body>
 </html>
