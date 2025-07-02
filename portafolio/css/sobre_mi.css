@@ -4,6 +4,7 @@
 
 .contenedor-s{
     width: 100%;
+    min-height: 90vh;
     background-color: #101010;
     border-radius: 30px;
     padding: 7px;

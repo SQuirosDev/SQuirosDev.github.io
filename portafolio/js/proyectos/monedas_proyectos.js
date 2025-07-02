@@ -1,21 +1,49 @@
 function monedasLenguagesProgramacionProyectos(proyecto){
-    return proyecto.lenguajesProgrmacion.map(
-        idLenguajeProgramacion => {
-            const lenguajeProgramacion = lenguajesProgramacion.find(m => m.id === idLenguajeProgramacion);
-            if (!lenguajeProgramacion) return "";  // si no existe, saltar
-            return monedasEstructuraProyectos(lenguajeProgramacion.urlImagen, lenguajeProgramacion.nombre);
-        }   
-    ).join("");
+    const ids = proyecto.lenguajesProgrmacion || [];
+    let html = '';
+    for (let i = 0; i < ids.length; i++) {
+        const tech = tecnologias.find(t => t.id === ids[i]);
+        if (tech && tech.categoria === 'Lenguajes de Programacion') {
+            html += monedasEstructuraProyectos(tech.urlImagen, tech.nombre);
+        }
+    }
+    return html;
 }
 
-function monedasHerramientasProyectos(proyecto){
-    return proyecto.herramientas.map(
-        idHerramienta => {
-            const herramienta = herramientas.find(h => h.id === idHerramienta);
-            if (!herramienta) return "";
-            return monedasEstructuraProyectos(herramienta.urlImagen, herramienta.nombre);
+function monedasFrameworksLibreriasProyectos(proyecto){
+    const ids = proyecto.frameworkLibreria || [];
+    let html = '';
+    for (let i = 0; i < ids.length; i++) {
+        const tech = tecnologias.find(t => t.id === ids[i]);
+        if (tech && tech.categoria === 'Frameworks y Librerias') {
+            html += monedasEstructuraProyectos(tech.urlImagen, tech.nombre);
         }
-    ).join("");
+    }
+    return html;
+}
+
+function monedasHerramientasIDEsProyectos(proyecto){        
+    const ids = proyecto.herramientas || [];
+    let html = '';
+    for (let i = 0; i < ids.length; i++) {
+        const tech = tecnologias.find(t => t.id === ids[i]);
+        if (tech && tech.categoria === 'Herramientas y IDEs') {
+            html += monedasEstructuraProyectos(tech.urlImagen, tech.nombre);
+        }
+    }
+    return html;
+}
+
+function monedasDevOpsInfraestructuraCloudProyectos(proyecto){
+    const ids = proyecto.devopsInfraestructuraCloud || [];
+    let html = '';
+    for (let i = 0; i < ids.length; i++) {
+        const tech = tecnologias.find(t => t.id === ids[i]);
+        if (tech && tech.categoria === 'DevOps e Infraestructura Cloud') {
+            html += monedasEstructuraProyectos(tech.urlImagen, tech.nombre);
+        }
+    }
+    return html;
 }
 
 function monedasEstructuraProyectos(urlImagen, nombre){

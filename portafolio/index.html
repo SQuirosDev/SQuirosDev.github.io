@@ -41,7 +41,7 @@
         <script src="js/proyectos/modal.js"></script>   
 
     </head>
-    <body onload="mostrarTextos(), monedasTecnologias(), cartasProyectos()">
+    <body onload="mostrarTextos(), monedasTecnologiasPrincipales(), cartasProyectos()">
         <canvas></canvas>
         <div class="Container">
 
@@ -169,28 +169,20 @@
                     
                     <!--Contenedor Full Screen-->
                     <div class="contenedor-t seccion-tamano tron-box d-flex align-items-center text-center" id="HabilidadesYHerramientas">
-                        <!--Habilidades y Herramientas-->
+                        <!--Tecnologias-->
                         <div class="seccion-T d-flex justify-content-center flex-column gap-3">
 
-                                <!-- Habilidades -->
+                                <!-- Tecnologias Principales -->
                                 <div class="d-flex flex-column gap-3">
-                                    <h1 class="tron-text">Habilidades</h1>
-                                    <div class="flex-padre-T filtrado" id="contenedorMonedasLP">
-                                        <!--Monedas-->
-                                    </div>
-                                </div>
-
-                                <!-- Herramientas -->
-                                <div class="d-flex flex-column gap-3">
-                                    <h1 class="tron-text">Herramientas</h1>
-                                    <div class="flex-padre-T filtrado" id="contenedorMonedasTools">
+                                    <h1 class="tron-text">Tecnologias Principales</h1>
+                                    <div class="flex-padre-T filtrado" id="contenedorMonedasTP">
                                         <!--Monedas-->
                                     </div>
                                 </div>
 
                                 <!--Boton-->
                                 <div class="botones-S d-flex flex-row">
-                                    <a href="tecnologias.html" class="boton btn-grande tron-boton">Más Informacion</a>
+                                    <a href="tecnologias.html" class="boton btn-grande tron-boton">Más Tecnologias</a>
                                 </div>
 
                         </div>
@@ -262,7 +254,7 @@
         <!-- Modal Overlay (al final del body) -->
         <div id="modal" class="modal">
             <div class="modal-content tron-box">
-                <button id="modal-close" class="modal-close"></button>
+                <button id="modal-close" class="modal-close"><i class="fa-solid fa-xmark"></i></button>
                 <div class="d-flex justify-content-center">
                     <img id="modal-image" src="" alt="" class="">
                 </div>
@@ -271,11 +263,17 @@
 
                 <!-- Contenedores para monedas -->
                 <div class="modal-coins">
-                    <p class="tron-text titulo-p">Lenguajes</p>
-                    <div id="modal-langs" class="flex-padre-p d-flex justify-content-start"></div>
+                    <p id="modal-lp-titulo" class="tron-text titulo-p"></p>
+                    <div id="modal-lp" class="flex-padre-p d-flex justify-content-start"></div>
 
-                    <p class="tron-text titulo-p">Herramientas</p>
-                    <div id="modal-tools" class="flex-padre-p d-flex justify-content-start"></div>
+                    <p id="modal-fl-titulo" class="tron-text titulo-p"></p>
+                    <div id="modal-fl" class="flex-padre-p d-flex justify-content-start"></div>
+                    
+                    <p id="modal-hi-titulo" class="tron-text titulo-p"></p>
+                    <div id="modal-hi" class="flex-padre-p d-flex justify-content-start"></div>
+
+                    <p id="modal-dic-titulo" class="tron-text titulo-p"></p>
+                    <div id="modal-dic" class="flex-padre-p d-flex justify-content-start"></div>
                 </div>
 
                 <!-- Contenedor para botones de acción -->

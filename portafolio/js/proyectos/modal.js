@@ -4,13 +4,15 @@
 
 function setupProjectModal() {
     // 2. Cachear elementos del DOM
-    const modal       = document.getElementById('modal');
-    const btnCerrar   = document.getElementById('modal-close');
-    const titleNode   = document.getElementById('modal-title');
-    const imgNode     = document.getElementById('modal-image');
-    const descNode    = document.getElementById('modal-desc');
-    const langsCont   = document.getElementById('modal-langs');
-    const toolsCont   = document.getElementById('modal-tools');
+    const modal = document.getElementById('modal');
+    const btnCerrar = document.getElementById('modal-close');
+    const titleNode = document.getElementById('modal-title');
+    const imgNode = document.getElementById('modal-image');
+    const descNode = document.getElementById('modal-desc');
+    const contlp = document.getElementById('modal-lp');
+    const contfi = document.getElementById('modal-fl');
+    const conthi = document.getElementById('modal-hi');
+    const contdic = document.getElementById('modal-dic');
     const buttonsCont = document.getElementById('modal-buttons');
 
     // 3. Función para abrir modal
@@ -23,15 +25,40 @@ function setupProjectModal() {
         imgNode.alt = proy.nombre;
         descNode.innerHTML = proy.descripcion;
 
-        // 1) Construir las monedas de lenguajes
-        const monedasLPHtml = monedasLenguagesProgramacionProyectos(proy)
+        // 1) Construir las monedas tecnologias
+        let monedasLPHtml = ""
+        let monedasfiHtml = ""
+        let monedashiHtml = ""
+        let monedasdicHtml = ""
+
+        if (proy.lenguajesProgrmacion.length > 0){
+            const titulo = document.getElementById('modal-lp-titulo')
+            titulo.innerText = "Lenguajes de Programacion"
+            monedasLPHtml = monedasLenguagesProgramacionProyectos(proy)
+        }
+
+        if (proy.frameworkLibreria.length > 0){
+            const titulo = document.getElementById('modal-fl-titulo')
+            titulo.innerText = "Frameworks y Librerias"
+            monedasfiHtml = monedasFrameworksLibreriasProyectos(proy);
+        }
+
+        if (proy.herramientas.length > 0){
+            const titulo = document.getElementById('modal-hi-titulo')
+            titulo.innerText = "Herramientas y IDEs"
+            monedashiHtml = monedasHerramientasIDEsProyectos(proy);
+        }
+
+        if (proy.devopsInfraestructuraCloud.length > 0){
+            const titulo = document.getElementById('modal-dic-titulo');
+            titulo.innerText = "DevOps e Infraestructura Cloud";
+            monedasdicHtml = monedasDevOpsInfraestructuraCloudProyectos(proy);
+        }
         
-        langsCont.innerHTML = monedasLPHtml;
-
-        // 2) Construir las monedas de herramientas
-        const monedasToolsHtml = monedasHerramientasProyectos(proy)
-
-        toolsCont.innerHTML = monedasToolsHtml;
+        contlp.innerHTML = monedasLPHtml;
+        contfi.innerHTML = monedasfiHtml;
+        conthi.innerHTML = monedashiHtml;
+        contdic.innerHTML = monedasdicHtml;
 
         // 3) Botones de acción
         buttonsCont.innerHTML = '';  // limpia botones viejos
@@ -60,6 +87,17 @@ function setupProjectModal() {
 
     // 4. Función para cerrar modal
     function cerrarModal(pushUrl = true) {
+        const titulolp = document.getElementById('modal-lp-titulo')
+        const titulofi = document.getElementById('modal-fl-titulo')
+        const titulohi = document.getElementById('modal-hi-titulo')
+        const titulodic = document.getElementById('modal-dic-titulo');
+        
+        titulolp.innerText = ""
+        titulofi.innerText = ""
+        titulohi.innerText = ""
+        titulodic.innerText = ""
+        
+
         modal.classList.remove('active');
         if (pushUrl) {
             history.pushState({}, '', window.location.pathname);

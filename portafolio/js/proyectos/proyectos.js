@@ -13,15 +13,17 @@ function cartasProyectos() {
         }
 
         // Construimos las monedas y la carta en un solo lugar
-        const monedasLP   = monedasLenguagesProgramacionProyectos(proyecto);
-        const monedasHT   = monedasHerramientasProyectos(proyecto);
-        cartasProyectos  += cartasEstructura(proyecto, monedasLP, monedasHT);
+        const monedasLP = monedasLenguagesProgramacionProyectos(proyecto);
+        const monedasFL = monedasFrameworksLibreriasProyectos(proyecto);
+        const monedasHI = monedasHerramientasIDEsProyectos(proyecto);
+        const monedasDIC = monedasDevOpsInfraestructuraCloudProyectos(proyecto);
+        cartasProyectos += cartasEstructura(proyecto, monedasLP, monedasFL, monedasHI, monedasDIC);
     }
 
     contCP.innerHTML = cartasProyectos
 }
 
-function cartasEstructura(proyecto, monedaslenguajesProgramacion, monedasHerramientas){
+function cartasEstructura(proyecto, monedasLP, monedasFL, monedasHI, monedasDIC){
     return `
         <button class="open-modal carta-boton-P" data-id="${proyecto.id}" onclick="setupProjectModal()">
             <div class="carta">
@@ -33,12 +35,22 @@ function cartasEstructura(proyecto, monedaslenguajesProgramacion, monedasHerrami
                 </div>
                 <div class="carta-tecnologia-P">
                     <div class="flex-padre-tecnologias-P">
-                        ${monedaslenguajesProgramacion}
+                        ${monedasLP}
                     </div>
                 </div>
                 <div class="carta-tecnologia-P">
                     <div class="flex-padre-tecnologias-P">
-                        ${monedasHerramientas}
+                        ${monedasFL}
+                    </div>
+                </div>
+                <div class="carta-tecnologia-P">
+                    <div class="flex-padre-tecnologias-P">
+                        ${monedasHI}
+                    </div>
+                </div>
+                <div class="carta-tecnologia-P">
+                    <div class="flex-padre-tecnologias-P">
+                        ${monedasDIC}
                     </div>
                 </div>
             </div>

@@ -3,7 +3,7 @@
 
 .contenedor-p{
     width: 100%;
-    min-height: 90vh;
+    height: auto;
     background-color: #101010;
     border-radius: 30px;
     padding: 7px;
@@ -27,7 +27,7 @@
 
 .carta{ /*Cartas de proyectos*/
     width: 360px;
-    height: auto;
+    min-height: 540px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,13 +58,11 @@
 
 .carta-boton-P{ /*Boton carta (contenedor)*/
     width: auto;
-    height: auto;
     border-radius: 20px;
 }
 
 .carta-boton-P button{ /*Boton carta*/
     width: auto;
-    height: auto;
     border-radius: 15px;
 }
 
@@ -195,13 +193,14 @@
    Contenido del modal
    ----------------------- */
 .modal-content {
+  position: relative;
   background: #101010;
-  padding: 14px;
+  padding: 3rem 1rem 1rem;   /* padding-top mayor para dejar hueco al botón */
   border-radius: 30px;
   width: 70%;
   height: 90vh;
-  position: relative;
   animation: fadeIn 0.3s ease-out;
+  overflow-y: auto;
 }
 
 .modal-content img {
@@ -211,8 +210,6 @@
 
 .inferior {
     text-align: center;
-    position: absolute;
-    bottom: 0;
     padding: 14px;
 }
 
@@ -226,11 +223,13 @@
    ----------------------- */
 .modal-close {
   position: absolute;
-  top: 0.5rem; right: 0.75rem;
+  top: 0.75rem;
+  left: 1.3rem;       /* antes era right */
   background: none;
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
+  z-index: 10;
 }
 
 /* -----------------------
@@ -298,9 +297,26 @@
         padding-top: 5px;
     }
 
-    .modal-content img {
+    .modal {
+        align-items: flex-start;
+    }
+
+    .modal-content {
         width: 100%;
-        height: auto;
+        height: 100%;
+        max-width: none;
+        max-height: none;
+        border-radius: 0;         /* sin esquinas redondeadas */
+        margin: 0;                /* quitar márgenes automáticos */
+        padding: 3.3rem 1rem 1rem; /* más espacio arriba si quieres */
+    }
+
+    #modal-title{
+        text-align: center;
+    }
+
+    .modal-content img {
+        width: 100%;              /* que la imagen también escale */
         border-radius: 30px;
     }
 }
