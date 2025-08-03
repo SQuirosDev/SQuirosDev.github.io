@@ -74,40 +74,40 @@ function adaptarPantalla() {
 
         let botones = `
             <div>
-                <button class="boton_movil">
-                    <img src="../Imagenes/Imagen 1.jpg" alt="Botón 1">
-                    <span>Documento 1</span>
-                </button>
+            <a class="boton_movil" href="../Imagenes/Imagen 1.jpg" target="_blank">
+                <img src="../Imagenes/Imagen 1.jpg" alt="Botón 1">
+                <span>Documento 1</span>
+            </a>
             </div>
             <div>
-                <button class="boton_movil">
-                    <img src="../Imagenes/Imagen 2.jpg" alt="Botón 2">
-                    <span>Documento 2</span>
-                </button>
+            <a class="boton_movil" href="../Imagenes/Imagen 2.jpg" target="_blank">
+                <img src="../Imagenes/Imagen 2.jpg" alt="Botón 2">
+                <span>Documento 2</span>
+            </a>
             </div>
             <div>
-                <button class="boton_movil">
-                    <img src="../Imagenes/Imagen 3.jpg" alt="Botón 3">
-                    <span>Documento 3</span>
-                </button>
+            <a class="boton_movil" href="../Imagenes/Imagen 3.jpg" target="_blank">
+                <img src="../Imagenes/Imagen 3.jpg" alt="Botón 3">
+                <span>Documento 3</span>
+            </a>
             </div>
             <div>
-                <button class="boton_movil">
-                    <img src="../Imagenes/Imagen 4.jpg" alt="Botón 4">
-                    <span>Documento 4</span>
-                </button>
+            <a class="boton_movil" href="../Imagenes/Imagen 4.jpg" target="_blank">
+                <img src="../Imagenes/Imagen 4.jpg" alt="Botón 4">
+                <span>Documento 4</span>
+            </a>
             </div>
             <div>
-                <button class="boton_movil">
-                    <img src="../Imagenes/Imagen 5.jpg" alt="Botón 5">
-                    <span>Documento 5</span>
-                </button>
+            <a class="boton_movil" href="../Imagenes/Imagen 5.jpg" target="_blank">
+                <img src="../Imagenes/Imagen 5.jpg" alt="Botón 5">
+                <span>Documento 5</span>
+            </a>
             </div>
             <div>
-                <button class="boton_movil">
-                    <img src="../Imagenes/Imagen 6.jpg" alt="Botón 6">
-                    <span>Documento 6</span>
-                </button>
+            <a class="boton_movil" href="../Imagenes/Imagen 6.jpg" target="_blank">
+                <img src="../Imagenes/Imagen 6.jpg" alt="Botón 6">
+                <span>Documento 6</span>
+            </a>
             </div>
         `
 
