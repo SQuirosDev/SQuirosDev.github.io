@@ -1,84 +1,80 @@
-.contenedor {
-    position: relative;
-    width: 1600px;
-    height: 600px;
-    top: -20px;
-    left: 30px;
+    p{
+        text-align: center;
+        font-family: Arial, sans-serif;
+        color: #fff;
+    }
+    
+    /* --- CONTENEDOR PRINCIPAL --- */
+    .contenedor {
+        width: 90%;
+        max-width: 1600px;
+        height: auto;
+        margin: 0 auto;            /* centra horizontal */
+        top: -20px;                /* opcional vertical */
+        display: flex;
+        justify-content: center;
+    }
 
-    /* CENTRAR CONTENIDO */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    /* --- BOTONES / MINIATURAS --- */
+    .boton {
+        position: relative;
+        width: 150px;
+        height: 500px;
+        margin: 0 -20px;            /* solapa entre botones */
+        background-color: #444;
+        border: 2px solid #888;
+        border-radius: 8px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: transform 0.4s ease;  /* transición suave */
+        z-index: 1;
+    }
 
-/* Ajustes para que los botones se posicionen respecto al contenedor centrado */
-.boton {
-    position: absolute;
-    top: 50%; /* Centrado vertical */
-    transform: translateY(-50%);
-    height: 500px; /* Acorde al contenedor (puedes ajustar) */
-    width: 80px;
-    background-color: #444;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    border: 2px solid #888;
-    font-size: 1.1em;
-    font-weight: bold;
-    font-family: "Arial Narrow", sans-serif;
-    cursor: pointer;
-    transition: all 0.4s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    overflow: visible;
-    z-index: 1;
-    padding: 5px;
-}
+    .boton img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;  /* transición suave */
+    }
 
-.boton img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 6px;
-}
+    /* Etiqueta girada */
+    .boton span {
+        position: absolute;
+        top: 50%;                     /* centro vertical */
+        left: 36%;                    /* centro horizontal */
+        transform: translate(-50%, -50%) rotate(-90deg);
+        transform-origin: center;     /* punto de giro en el centro */
+        white-space: nowrap;
+        font-family: "Arial Narrow", sans-serif;
+        font-size: 1.1em;
+        font-weight: bold;
+        color: #fff;
+        background-color: rgba(0,0,0,0.7);
+        padding: 5px;
+        border-radius: 4px;
+        pointer-events: none;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        transition: transform 0.4s ease, background-color 0.4s ease;
+    }
 
-/* El resto de estilos no cambian */
-.boton span {
-    display: block;
-    transform: rotate(-90deg);
-    white-space: nowrap;
-    pointer-events: none;
-    transition: transform 0.4s ease;
-    position: absolute;
-    width: max-content;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 5px;
-    border-radius: 4px;
-}
+    /* Sombra/borde extra al hacer hover */
+    .boton:hover {
+        width: auto;
+        border-color: #aaa;
+        z-index: 5;
+        box-shadow:
+            0 0 40px 20px rgba(0, 0, 0, 0.9),    /* capa interior */
+            0 0 80px 40px rgba(0, 0, 0, 0.7),    /* capa exterior */
+            0 0 120px 60px rgba(0, 0, 0, 0.5);   /* difuminado extra */
+    }
 
-.boton.expandido {
-    width: 800px;
-    box-shadow: inset 0 0 30px 10px rgba(255, 255, 255, 0.3),
-                0 0 20px rgba(187, 134, 252, 0.8);
-    z-index: 10;
-}
+    .boton:hover span {
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(0deg);
+        background-color: rgba(0,0,0,0.9); /* opcional: más contraste al hover */
+    }
 
-.boton.expandido span {
-    transform: rotate(0deg);
-    position: block;
-    white-space: normal;
-    padding: 0 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.boton.contiguo {
-    z-index: 5;
-}
-
+/* ----------------------------------- */
 .contenedorMovil {
     width: 100%;
     display: flex;
@@ -120,7 +116,7 @@
     left: 50%;
     transform: translate(-50%, -50%); /* Centrado perfecto */
     color: white;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0,0,0,0.7);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     padding: 5px 15px;
@@ -130,53 +126,4 @@
 
 .boton_movil:hover {
     transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
-}
-
-/* ----------------------------------- */
-/* MEDIA QUERIES PARA RESPONSIVE DESIGN */
-/* ----------------------------------- */
-
-@media (max-width: 1024px) {
-    .boton {
-        height: 400px;
-        width: 60px;
-    }
-
-    .boton.expandido {
-        width: 600px;
-    }
-
-    .contenedor {
-        height: 500px;
-    }
-}
-
-@media (max-width: 768px) {
-    .boton {
-        height: 300px;
-        width: 50px;
-    }
-
-    .boton.expandido {
-        width: 450px;
-    }
-
-    .contenedor {
-        height: 400px;
-    }
-}
-
-@media (max-width: 480px) {
-    .boton {
-        height: 220px;
-        width: 40px;
-    }
-
-    .boton.expandido {
-        width: 320px;
-    }
-
-    .contenedor {
-        height: 300px;
-    }
 }
