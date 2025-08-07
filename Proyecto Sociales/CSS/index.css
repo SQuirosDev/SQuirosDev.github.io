@@ -22,28 +22,31 @@
     background-color: #222;
     padding: 30px;
     border-radius: 10px;
-    border: 2px solid #f9edbe;
+    border: 2px solid white;
 }
 
 #mensaje h2 {
-    color: #f9edbe;
+    color: white;
     margin-bottom: 20px;
     font-size: 2em;
+    font-weight: bolder;
 }
 
 #mensaje p {
     margin: 15px 0;
     font-size: 1.2em;
     line-height: 1.5;
+    color: #c7c7c7;
 }
 
 #cerrar {
-    background-color: #f9edbe;
+    width: 100%;
+    background-color: white;
     border: none;
     color: #333;
     padding: 12px 25px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 1.1em;
     font-weight: bold;
     margin-top: 30px;
@@ -51,6 +54,6 @@
 }
 
 #cerrar:hover {
-    background-color: #e74c3c;
+    background-color: #838383;
     color: white;
 }

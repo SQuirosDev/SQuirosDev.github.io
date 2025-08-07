@@ -1,0 +1,209 @@
+/******************NAVBAR************************/
+
+:root{
+    --nav-bg: #181818;
+    --nav-height: 64px;       /* altura visible de la barra */
+    --max-width: 1200px;      /* ancho del contenido centrado */
+    --gap: 0.75rem;           /* separación entre íconos */
+    --icon-size: 18px;
+    --text-muted: #d1d1d1;
+}
+
+/* Reset pequeño para listados dentro del nav */
+.nav-list { list-style: none; margin: 0; padding: 0; }
+
+/* Contenedor principal */
+.navbar{
+  width: 100%;
+  background: var(--nav-bg);
+  border-bottom: 2px solid #ffffff;
+}
+
+/* Inner: centra horizontalmente y organiza con flex */
+.nav-inner{
+  max-width: var(--max-width);
+  height: var(--nav-height);
+  margin: 0 auto;                 /* centra horizont. en la página */
+  display: flex;
+  align-items: center;            /* centra verticalmente los items */
+  justify-content: space-between; /* marca a la izquierda y ayudas a la derecha */
+  padding: 0 18px;                /* espacio lateral */
+  box-sizing: border-box;
+}
+
+/* Marca / nombre a la izquierda */
+.brand{
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.2px;
+  line-height: 1;
+  display: inline-block;
+}
+
+/* Lista de íconos: alineados a la derecha por el space-between */
+.nav-list{
+  display: flex;
+  gap: var(--gap);
+  align-items: center; /* asegura que los íconos queden centrados verticalmente */
+  margin: 0;
+}
+
+/* Enlaces de ícono: área clicable consistente y centrada */
+.nav-link{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 6px;
+  transition: background-color .15s, color .15s, transform .08s;
+  font-size: var(--icon-size);
+}
+
+/* Hover / foco accesible */
+.nav-link:hover,
+.nav-link:focus{
+  color: #a7a7a7;
+  background: rgba(255,255,255,0.03);
+  transform: translateY(-1px);
+  outline: none;
+}
+
+/* Clase utilitaria para accesibilidad (oculta visualmente pero visible para lector de pantalla) */
+.sr-only{
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0);
+  white-space: nowrap; border: 0;
+}
+
+/****************FOOTER***********************/
+
+/* Footer principal */
+.site-footer{
+  width: 100%;
+  background: var(--nav-bg);
+  border-top: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+/* Contenido centrado y con la misma altura 'visual' que el nav */
+.footer-inner{
+  max-width: var(--max-width);
+  margin: 0 auto;
+  min-height: calc(var(--nav-height));
+  padding: 12px 18px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;   /* apila título, derechos y autor */
+  align-items: center;      /* centra horizontal */
+  justify-content: center;  /* centra vertical */
+  gap: 4px;
+  text-align: center;
+}
+
+/* Estilos de texto */
+/* Título (contenedor) */
+.footer-title{
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1;
+  /* no fijamos color aquí para heredar color principal del footer (por defecto blanco) */
+}
+
+/* Link dentro del título: sin subrayado, heredando color y con interacción suave */
+.footer-title a{
+  color: inherit;                 /* hereda color del contenedor (.site-footer => #fff) */
+  text-decoration: none;          /* quita subrayado */
+  display: inline-block;          /* para poder aplicar padding / transform */
+  padding: 4px 6px;
+  border-radius: 6px;
+  transition: background-color .15s, color .15s, transform .08s;
+  cursor: pointer;
+}
+
+.footer-rights{
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.footer-author{
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+/* Hover y foco (accesible y consistente con el navbar) */
+.footer-title a:hover,
+.footer-title a:focus{
+  color: #d1d1d1;                 /* tono ligeramente gris */
+  background: rgba(255,255,255,0.03);
+  transform: translateY(-1px);
+  outline: none;
+}
+
+/* Foco visible para teclados (mejor accesibilidad) */
+.footer-title a:focus-visible{
+  outline: 3px solid rgba(209,209,209,0.15);
+  outline-offset: 3px;
+}
+
+/* ===== Responsive: cambios para móviles ===== */
+@media (max-width: 700px){
+  /* NAV: dos filas (columna) */
+  .nav-inner{
+    height: auto;                 /* altura automática porque tendrá 2 filas */
+    flex-direction: column;
+    align-items: stretch;         /* que ocupe todo el ancho del container */
+    gap: 6px;
+    padding: 8px 12px;
+  }
+
+  /* Primera fila: título centrado */
+  .brand{
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size: 1.02rem;
+    padding: 6px 0;
+  }
+
+  /* Segunda fila: íconos centrados y con wrap si hacen falta */
+  .nav-list{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-bottom: 6px;
+  }
+
+  .nav-link{
+    width: 42px;
+    height: 42px;
+    font-size: 17px;
+  }
+
+  /* FOOTER: en móvil lo dejamos igual (pegado abajo) pero el contenido del footer se apila para no acostarse */
+  .footer-inner{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8px 12px;
+    gap: 3px;
+  }
+
+  .footer-rights, .footer-author{
+    font-size: 0.82rem;
+  }
+}
+
+/* Small tweak: evita que los iconos se "pellizquen" al reducir ancho */
+@media (max-width: 420px){
+  .nav-link{ width: 29.4px; height: 29.4px; font-size: 15px; }
+  .brand{ font-size: 0.98rem; }
+}

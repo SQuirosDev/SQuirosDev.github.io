@@ -4,20 +4,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
+    overflow-x: hidden;
 }
 
 img{
-    width: 100%;
-    border-radius: 15px;
-}
-
-/* Pie de página */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    position: relative;
-    bottom: 0;
     width: 100%;
 }
