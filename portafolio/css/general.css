@@ -68,6 +68,28 @@ ul {
     transition: all 0.2s ease-in-out;  
 }
 
+.barra-boton {
+    width: auto;
+    height: 50px;
+    padding: 10px 20px;    
+    border-radius: 0px; 
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;  
+    padding: 10px 22.6px;
+    z-index: 10;
+
+    /*Estilo tron*/
+    color: white;
+    background-color: #333436; /*1e1f22*/
+    border: 1px solid #ffffff;
+    transition: 0.3s ease;
+    box-shadow:
+    inset 0 0 5px #ffffff,       /* interior blanco */
+    inset 0 0 5px #00e5ff,      /* interior azul */
+    0 0 4px #00e5ff,            /* exterior azul neón */
+    0 0 8px #008bb2;
+}
+
 .btn-grande {
     width: 375px;
 }
@@ -148,6 +170,16 @@ ul {
         0 0 7px #00e5ff,
         0 0 11px #008bb2;
     scale: 1.05;
+}
+
+.barra-boton:hover {
+    background-color: #232425;
+    color: white;
+    box-shadow:
+        inset 0 0 8px #ffffff,
+        inset 0 0 8px #00e5ff,
+        0 0 7px #00e5ff,
+        0 0 11px #008bb2;
 }
 
 /*==================================================================================================================*/

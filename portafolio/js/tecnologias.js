@@ -1,9 +1,11 @@
-function monedasTecnologias(){
+
+function funcionMonedasTecnologias(){
     const contLP = document.getElementById('contenedorMonedasLP');
     const contFL = document.getElementById('contenedorMonedasFL');
     const contHI = document.getElementById('contenedorMonedasHI');
     const contDIC = document.getElementById('contenedorMonedasDIC');
     const contOHT = document.getElementById('contenedorMonedasOHT');
+
 
     // ¿Estamos en modo “filtrado”? (busca la clase en cada contenedor)
     const filtrarLP = contLP.classList.contains('filtrado');
@@ -53,6 +55,101 @@ function monedasTecnologias(){
     contHI.innerHTML = monedasHerramientasIDEs;
     contDIC.innerHTML = monedasDevOpsInfraestructuraCloud;
     contOHT.innerHTML = monedasOtrasHabilidadesTecnicas;
+}
+
+function monedasLP (){
+    const contTituloTec = document.getElementById('ContenedorTituloTec');
+    const contMonedasTec = document.getElementById('ContenedorMonedasTec');
+
+    let monedasTecnologias = '';
+
+    contTituloTec.innerHTML = "";
+    contMonedasTec.innerHTML = ""
+
+    for (let lp of tecnologias) {
+        if (lp.categoria == "Lenguajes de Programacion"){
+            monedasTecnologias += monedasEstructura(lp.urlImagen, lp.nombre);
+        }
+    }
+
+    contTituloTec.innerHTML = "Lenguajes de Programacion"
+    contMonedasTec.innerHTML = monedasTecnologias;
+}
+
+function monedasFL (){
+    const contTituloTec = document.getElementById('ContenedorTituloTec');
+    const contMonedasTec = document.getElementById('ContenedorMonedasTec');
+
+    let monedasTecnologias = '';
+
+    contTituloTec.innerHTML = "";
+    contMonedasTec.innerHTML = ""
+
+    for (let fl of tecnologias) {
+        if (fl.categoria == "Frameworks y Librerias"){
+            monedasTecnologias += monedasEstructura(fl.urlImagen, fl.nombre);
+        }  
+    }
+
+    contTituloTec.innerHTML = "Frameworks y Librerias"
+    contMonedasTec.innerHTML = monedasTecnologias;
+}
+
+function monedasHI (){
+    const contTituloTec = document.getElementById('ContenedorTituloTec');
+    const contMonedasTec = document.getElementById('ContenedorMonedasTec');
+
+    let monedasTecnologias = '';
+
+    contTituloTec.innerHTML = "";
+    contMonedasTec.innerHTML = ""
+
+    for (let hi of tecnologias) {
+        if (hi.categoria == "Herramientas y IDEs"){
+            monedasTecnologias += monedasEstructura(hi.urlImagen, hi.nombre);
+        }  
+    }
+
+    contTituloTec.innerHTML = "Herramientas y IDEs"
+    contMonedasTec.innerHTML = monedasTecnologias;
+}
+
+function monedasDIC (){
+    const contTituloTec = document.getElementById('ContenedorTituloTec');
+    const contMonedasTec = document.getElementById('ContenedorMonedasTec');
+
+    let monedasTecnologias = '';
+
+    contTituloTec.innerHTML = "";
+    contMonedasTec.innerHTML = ""
+
+    for (let dic of tecnologias) {
+        if (dic.categoria == "DevOps e Infraestructura Cloud"){
+            monedasTecnologias += monedasEstructura(dic.urlImagen, dic.nombre);
+        }  
+    }
+
+    contTituloTec.innerHTML = "DevOps e Infraestructura Cloud"
+    contMonedasTec.innerHTML = monedasTecnologias;
+}
+
+function monedasOHT (){
+    const contTituloTec = document.getElementById('ContenedorTituloTec');
+    const contMonedasTec = document.getElementById('ContenedorMonedasTec');
+
+    let monedasTecnologias = '';
+
+    contTituloTec.innerHTML = "";
+    contMonedasTec.innerHTML = ""
+
+    for (let oht of tecnologias) {
+        if (oht.categoria == "Otras Habilidades Tecnicas"){
+            monedasTecnologias += monedasEstructura(oht.urlImagen, oht.nombre);
+        }  
+    }
+
+    contTituloTec.innerHTML = "Otras Habilidades Tecnicas"
+    contMonedasTec.innerHTML = monedasTecnologias;
 }
 
 function monedasTecnologiasPrincipales(){

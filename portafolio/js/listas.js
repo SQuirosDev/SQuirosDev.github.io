@@ -68,6 +68,7 @@ let tecnologias = [
         prioridad: false,
         categoria: "Lenguajes de Programacion",
     },
+    /*
     {
         id: 10,
         nombre: "C++",
@@ -75,6 +76,7 @@ let tecnologias = [
         prioridad: false,
         categoria: "Lenguajes de Programacion",
     },
+    */
     // Frameworks y Librerias
     {
         id: 11,
@@ -390,6 +392,38 @@ let proyectos = [
         },
         prioridad: true
     },
+    /*Proyecto 7: App Inscripciones Curso Robotica*/
+    {
+        id: 7,
+        urlImagen: "imagenes/proyectos/app_inscripciones_curso_robotica.png",
+        nombre: "App Inscripciones Curso Robotica",
+        descripcion: "Aplicacion para la informacion e inscripcion a mi curso de robotica <br> Proyecto Para TCU",
+        lenguajesProgrmacion: [7,8,1,4,5,6],
+        frameworkLibreria: [11, 12, 13],
+        herramientas: [18,16,15],
+        devopsInfraestructuraCloud: [],
+        github: {
+            estado: false,
+            texto: "Codigo",
+            url: ""
+        },
+        demoYT1: {
+            estado: false,
+            texto: "Demo 1",
+            url: ""
+        },
+        demoYT12: {
+            estado: false,
+            texto: "Demo 2",
+            url: ""
+        },
+        despliegues: {
+            estado: false,
+            texto: "Ver proyecto",
+            url: ""
+        },
+        prioridad: false
+    }
 ];
 
 /*-----------------------------------------------------------------------*/
@@ -418,8 +452,20 @@ let certificaciones = [
     },
     {
         id: 6,
+        urlImagen: "imagenes/certificados/ccna_1.png"
+    },
+    {
+        id: 6,
         urlImagen: "imagenes/certificados/mvc.png"
-    }
+    },
+    {
+        id: 7,
+        urlImagen: "imagenes/certificados/ccna_2.png"
+    },
+    {
+        id: 8,
+        urlImagen: "imagenes/certificados/power_bi.png"
+    },
 ]
 
 /*-----------------------------------------------------------------------*/

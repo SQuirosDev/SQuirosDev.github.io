@@ -32,7 +32,7 @@
         <script src="js/tecnologias.js"></script>        
 
     </head>
-    <body onload="monedasTecnologias()">
+    <body onload="monedasLP()">
         <canvas></canvas>
         <div class="Container">
 
@@ -60,51 +60,28 @@
                     <div class="contenedor-datos">
 
                     <!--Contenedor Full Screen-->
-                    <div class="contenedor-t seccion-tamano tron-box d-flex align-items-center text-center" id="HabilidadesYHerramientas">
+                    <div class="contenedor-t seccion-tamano tron-box d-flex flex-column text-center" id="HabilidadesYHerramientas">
+
+                        <div class="d-flex justify-content-center">
+                            <button class="barra-boton tron-text" style="border-radius: 23px 0 0 23px;" onclick="monedasLP()">Lenguajes de Programacion</button>
+                            <button class="barra-boton tron-text" onclick="monedasFL()">Frameworks y Librerias</button>
+                            <button class="barra-boton tron-text" onclick="monedasHI()">Herramientas y IDEs</button>
+                            <button class="barra-boton tron-text" onclick="monedasDIC()">DevOps e Infraestructura Cloud</button>
+                            <button class="barra-boton tron-text" style="border-radius: 0 23px 23px 0;" onclick="monedasOHT()">Otras Habilidades Tecnicas</button>
+                        </div>
+
                         <!--Tecnologias-->
-                        <div class="seccion-T d-flex justify-content-center flex-column gap-3">
+                        <div class="seccion-T d-flex justify-content-center align-items-center flex-column gap-3 flex-grow-1 my-auto">
 
                             <!-- Lenguajes de Programacion -->
-                            <div class="d-flex flex-column gap-3">
-                                <h1 class="tron-text">Lenguajes de Programacion</h1>
-                                <div class="flex-padre-T filtrado" id="contenedorMonedasLP">
+                            <div class="d-flex flex-column justify-content-center gap-3">
+                                <h1 class="tron-text" id="ContenedorTituloTec">Titulo</h1>
+                                <div class="flex-padre-T" id="ContenedorMonedasTec">
                                     <!--Monedas-->
                                 </div>
                             </div>
-
-                            <!--Frameworks y Librerias-->
-                            <div class="d-flex flex-column gap-3">
-                                <h1 class="tron-text">Frameworks y Librerias</h1>
-                                <div class="flex-padre-T filtrado" id="contenedorMonedasFL">
-                                    <!--Monedas-->
-                                </div>
-                            </div>
-
-                            <!-- Herramientas y IDEs -->
-                            <div class="d-flex flex-column gap-3">
-                                <h1 class="tron-text">Herramientas y IDEs</h1>
-                                <div class="flex-padre-T filtrado" id="contenedorMonedasHI">
-                                    <!--Monedas-->
-                                </div>
-                            </div>
-
-                            <!--DevOps e Infraestructura Cloud-->
-                            <div class="d-flex flex-column gap-3">
-                                <h1 class="tron-text">DevOps e Infraestructura Cloud</h1>
-                                <div class="flex-padre-T filtrado" id="contenedorMonedasDIC">
-                                    <!--Monedas-->
-                                </div>
-                            </div>
-
-                            <!--Otras Habilidades Tecnicas-->
-                            <div class="d-flex flex-column gap-3">
-                                <h1 class="tron-text">Otras Habilidades Tecnicas</h1>
-                                <div class="flex-padre-T filtrado" id="contenedorMonedasOHT">
-                                    <!--Monedas-->
-                                </div>
-                            </div>
-
                         </div>
+
                     </div>
 
                     </div>

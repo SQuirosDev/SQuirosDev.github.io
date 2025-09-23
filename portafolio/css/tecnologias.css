@@ -8,7 +8,7 @@
     background-color: #101010;
     border-radius: 30px;
     margin-bottom: 14px;
-    padding: 7px;
+    padding: 10px;
 }
 
 .seccion-T { /*acomodar el contenedor de esta parte*/
@@ -22,7 +22,7 @@
 .flex-padre-T{ /*acomoda las monedas*/
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-evenly !important;
     flex-wrap: wrap;
     margin-top: 0px;
     padding: 24px; 
