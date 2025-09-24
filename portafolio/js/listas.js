@@ -474,24 +474,23 @@ let certificaciones = [
 let textos = [
     {
         id: 1,
-        info: `Soy Sebastián Quirós, estudiante universitario de Ingeniería en Sistemas, con la mitad de la carrera ya completada. Durante este tiempo, he adquirido conocimientos en lenguajes 
-                de programación como C#, Python y SQL, así como en tecnologías para el desarrollo web (HTML, CSS y JavaScript). La mayoría de estos conocimientos están complementados con certificados 
+        info: `Soy Sebastián Quirós, estudiante universitario avanzado de Ingeniería en Sistemas, con más del 80% de la carrera ya completada. Durante este tiempo, he adquirido conocimientos en varias tecnologias 
+                como C#, Python, JS, SQL y entre otros. La mayoría de estos conocimientos están complementados con certificados 
                 que respaldan mi aprendizaje y mi compromiso por seguir creciendo en el ámbito tecnológico. Mi experiencia como estudiante me ha permitido aplicar estos conocimientos en proyectos, 
                 siempre buscando mejorar y crecer como profesional.`,
     },
     {
         id: 2,
-        info: `Cuento con una amplia gama de conocimientos, incluyendo lenguajes de programación como C#, Python y SQL, así como herramientas para desarrollo web (HTML, CSS y JavaScript). También manejo 
-                varias tecnologías y frameworks de los lenguajes de programación mencionados anteriormente.`,
+        info: `Cuento con una amplia gama de conocimientos, incluyendo varias tecnologas como C#, Python, JS, SQL y entre otros.`,
     },
     {
         id: 3,
-        info: `A lo largo de mi formación, mi experiencia se ha construido a través de la creación de proyectos personales y universitarios. He diseñado y desarrollado sistemas completos integrando frontend 
-                y backend. Estas experiencias han sido clave para fortalecer mis habilidades de análisis, desarrollo y colaboración.`,
+        info: `A lo largo de mi formación, mi experiencia se ha construido a través de la creación de proyectos personales y universitarios. He diseñado y desarrollado sistemas completos integrando frontend, 
+                backend y BD. Estas experiencias han sido clave para fortalecer mis habilidades de análisis, desarrollo y colaboración.`,
     },
     {
         id: 4,
-        info: `Actualmente, soy estudiante de Ingeniería en Sistemas en la Universidad Latina, donde he adquirido conocimientos avanzados en diferentes areas. Complemento mi formación con certificados en lenguajes 
-                de programación (C#, Python y SQL) y desarrollo web (HTML, CSS y JavaScript).`
+        info: `Actualmente, soy estudiante avanzado de Ingeniería en Sistemas en la Universidad Latina, donde he adquirido conocimientos avanzados en diferentes areas y tecnologias. Complemento mi formación con certificados en lenguajes 
+                de programación (C#, Python y SQL), desarrollo web (HTML, CSS y JavaScript) y otras tecnologias.`
     },
 ]
