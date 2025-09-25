@@ -235,7 +235,7 @@ let proyectos = [
     {
         id: 2,
         urlImagen: "imagenes/proyectos/sistema_restaurantes.png",
-        nombre: "Sistema para Restaurantes",
+        nombre: "App Web para Restaurantes",
         descripcion: `Proyecto Universitario de Programacion Web 
         <br>Pagina web para un sistema de restaurante que cuenta con tales funciones`,
         lenguajesProgrmacion: [7,8,1,4,5,6],
@@ -332,7 +332,7 @@ let proyectos = [
     {
         id: 5,
         urlImagen: "imagenes/proyectos/ecommerce.png",
-        nombre: "Ecommerce ",
+        nombre: "App Movil de Ecommerce ",
         descripcion: "Programacion Movil <br>Proyecto Universitario",
         lenguajesProgrmacion: [7,8,1,9],
         frameworkLibreria: [11,14],
@@ -396,7 +396,7 @@ let proyectos = [
     {
         id: 7,
         urlImagen: "imagenes/proyectos/app_inscripciones_curso_robotica.png",
-        nombre: "App Inscripciones Curso Robotica",
+        nombre: "App Web para Curso Robotica",
         descripcion: "Aplicacion para la informacion e inscripcion a mi curso de robotica <br> Proyecto Para TCU",
         lenguajesProgrmacion: [7,8,1,4,5,6],
         frameworkLibreria: [11, 12, 13],

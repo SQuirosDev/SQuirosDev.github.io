@@ -70,12 +70,11 @@ ul {
 
 .barra-boton {
     width: auto;
-    height: 50px;
-    padding: 10px 20px;    
+    height: 60px;
     border-radius: 0px; 
     cursor: pointer;
     transition: all 0.2s ease-in-out;  
-    padding: 10px 22px;
+    padding: 0px 25px;
     z-index: 10;
 
     /*Estilo tron*/
@@ -89,26 +88,6 @@ ul {
     0 0 4px #00e5ff,            /* exterior azul neón */
     0 0 8px #008bb2;
 }
-
-.barra-scroll {
-  display: flex;
-  flex-wrap: nowrap;         /* todos en una sola línea */
-  overflow-x: auto;          /* scroll horizontal */
-  -webkit-overflow-scrolling: touch; /* suave en iOS */
-  padding: 8px 4px;
-  scrollbar-width: none;     /* oculta scrollbar en Firefox */
-}
-
-.barra-scroll::-webkit-scrollbar {
-  display: none;             /* oculta scrollbar en Chrome/Safari */
-}
-
-
-.barra-scroll .barra-boton {
-  flex: 0 0 auto;            /* evita que los botones se encojan */
-  white-space: nowrap;       /* el texto no se parte */
-}
-
 
 .btn-grande {
     width: 375px;
@@ -204,9 +183,28 @@ ul {
 
 /*==================================================================================================================*/
 
+@media (max-width: 1605px) {
+    .barra-scroll {
+        display: flex;
+        flex-wrap: nowrap;         /* todos en una sola línea */
+        overflow-x: auto;          /* scroll horizontal */
+        -webkit-overflow-scrolling: touch; /* suave en iOS */
+        scrollbar-width: none;     /* oculta scrollbar en Firefox */
+    }
+
+    .barra-scroll::-webkit-scrollbar {
+        display: none;             /* oculta scrollbar en Chrome/Safari */
+    }
+
+
+    .barra-scroll .barra-boton {
+        flex: 0 0 auto;            /* evita que los botones se encojan */
+        white-space: nowrap;       /* el texto no se parte */
+    }
+}
+
 @media (max-width: 780px) {
-  .barra-scroll {
-    overflow-x: auto;
-    flex-wrap: nowrap;
-  }
+    .btn-grande{
+        width: 100%;
+    }
 }

@@ -27,12 +27,12 @@
 
 .carta{ /*Cartas de proyectos*/
     width: 360px;
-    min-height: 540px;
+    min-height: 540px; /*540*/
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #1e1f22;
-    border-radius: 15px;
+    border-radius: 23px;
     box-shadow: 0 0 10px rgb(128, 128, 128); /* Sombra para profundidad */
     transition: 0.3s ease;
 }
@@ -58,12 +58,8 @@
 
 .carta-boton-P{ /*Boton carta (contenedor)*/
     width: auto;
-    border-radius: 20px;
-}
-
-.carta-boton-P button{ /*Boton carta*/
-    width: auto;
-    border-radius: 15px;
+    height: fit-content;
+    border-radius: 23px;
 }
 
 .flex-padre-tecnologias-P{ /*Acomoda las tecnologias*/
@@ -242,10 +238,16 @@
 
 /*-----------------------------------------------------------------------*/
 
+@media (max-width: 1040px){
+    .carta{
+        min-height: auto;
+    }
+}
+
 @media (max-width: 780px) {
     .carta{
         width: 100%;
-        height: auto;
+        min-height: auto;
     }
 
     .carta-imagen-P{
@@ -318,5 +320,25 @@
     .modal-content img {
         width: 100%;              /* que la imagen también escale */
         border-radius: 30px;
+    }
+}
+
+@media (max-width: 100vw) {
+    .barra-scroll {
+        display: flex;
+        flex-wrap: nowrap;         /* todos en una sola línea */
+        overflow-x: auto;          /* scroll horizontal */
+        -webkit-overflow-scrolling: touch; /* suave en iOS */
+        scrollbar-width: none;     /* oculta scrollbar en Firefox */
+    }
+
+    .barra-scroll::-webkit-scrollbar {
+        display: none;             /* oculta scrollbar en Chrome/Safari */
+    }
+
+
+    .barra-scroll, .coin-P {
+        flex: 0 0 auto;            /* evita que los botones se encojan */
+        white-space: nowrap;       /* el texto no se parte */
     }
 }

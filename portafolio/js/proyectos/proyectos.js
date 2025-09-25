@@ -34,22 +34,22 @@ function cartasEstructura(proyecto, monedasLP, monedasFL, monedasHI, monedasDIC)
                     <p class="titulo-p tron-text">${proyecto.nombre}</p>
                 </div>
                 <div class="carta-tecnologia-P">
-                    <div class="flex-padre-tecnologias-P">
+                    <div class="barra-scroll flex-padre-tecnologias-P">
                         ${monedasLP}
                     </div>
                 </div>
                 <div class="carta-tecnologia-P">
-                    <div class="flex-padre-tecnologias-P">
+                    <div class="barra-scroll flex-padre-tecnologias-P">
                         ${monedasFL}
                     </div>
                 </div>
                 <div class="carta-tecnologia-P">
-                    <div class="flex-padre-tecnologias-P">
+                    <div class="barra-scroll flex-padre-tecnologias-P">
                         ${monedasHI}
                     </div>
                 </div>
                 <div class="carta-tecnologia-P">
-                    <div class="flex-padre-tecnologias-P">
+                    <div class="barra-scroll flex-padre-tecnologias-P">
                         ${monedasDIC}
                     </div>
                 </div>

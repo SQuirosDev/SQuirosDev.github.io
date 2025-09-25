@@ -28,15 +28,14 @@
 .certificaciones img{
     width: 400px;
     height: auto;
-    margin: 0 10px 20px 10px;
+    border-radius: 23px;
 }
 
 /*-----------------------------------------------------------------------*/
 
 @media (max-width: 780px) {
     .certificaciones img{
-        width: 90%;
+        width: 100%;
         height: auto;
-        margin: 0 10px 20px 10px;
     }
 }
