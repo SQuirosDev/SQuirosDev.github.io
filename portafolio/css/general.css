@@ -31,6 +31,7 @@ p {
     color: white;
     margin: 0;
     padding: 0;
+
 }
 
 a {
@@ -127,6 +128,36 @@ ul {
         0 0 8px #008bb2;
 }
 
+.tron-text-small {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    text-shadow:
+        /* glow blanco intenso */
+        0 0 1px #ffffff,
+        /* glow azul interior */
+        0 0 5px #00e5ff,
+        /* glow azul neón */
+        0 0 4px #00e5ff,
+        /* glow azul profundo */
+        0 0 8px #008bb2;
+}
+
+.tron-text-x-small {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    text-shadow:
+        /* glow blanco intenso */
+        0 0 1px #ffffff,
+        /* glow azul interior */
+        0 0 5px #00e5ff,
+        /* glow azul neón */
+        0 0 4px #00e5ff,
+        /* glow azul profundo */
+        0 0 8px #008bb2;
+}
+
 /* ===== Tron Neon Box con transición blanca→azul ===== */
 .tron-box {
     /*background-color: rgba(0, 30, 50, 0.8);*/
@@ -189,7 +220,6 @@ ul {
         flex-wrap: nowrap;         /* todos en una sola línea */
         overflow-x: auto;          /* scroll horizontal */
         -webkit-overflow-scrolling: touch; /* suave en iOS */
-        scrollbar-width: none;     /* oculta scrollbar en Firefox */
     }
 
     .barra-scroll::-webkit-scrollbar {

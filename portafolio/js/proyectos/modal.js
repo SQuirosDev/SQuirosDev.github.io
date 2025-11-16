@@ -64,7 +64,7 @@ function setupProjectModal() {
         buttonsCont.innerHTML = '';  // limpia botones viejos
 
         // lista de claves según tu estructura
-        const acciones = ['github', 'demoYT1', 'demoYT12', 'despliegues'];
+        const acciones = ['github', 'demoYT1', 'demoYT2', 'despliegues'];
 
         for (const key of acciones) {
             const act = proy[key];

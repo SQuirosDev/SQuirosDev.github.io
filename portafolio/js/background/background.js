@@ -15,9 +15,9 @@ function adjustBalls() {
 
     // Cambiar la cantidad de bolas según el tamaño de la pantalla
     if (screenWidth > 768) {
-        numBolas = 40; // Pantallas grandes
+        numBolas = 28; // Pantallas grandes
     } else {
-        numBolas = 20; // Pantallas pequeñas
+        numBolas = 14; // Pantallas pequeñas
     }
 
     // Recalcular las bolas

@@ -68,21 +68,19 @@ let tecnologias = [
         prioridad: false,
         categoria: "Lenguajes de Programacion",
     },
-    /*
     {
         id: 10,
         nombre: "C++",
         urlImagen: "imagenes/lenguajes_programacion/c++.png",
-        prioridad: false,
+        prioridad: true,
         categoria: "Lenguajes de Programacion",
     },
-    */
     // Frameworks y Librerias
     {
         id: 11,
         nombre: ".Net",
         urlImagen: "imagenes/frameworks_librerias/net.png",
-        prioridad: false,
+        prioridad: true,
         categoria: "Frameworks y Librerias",
     },
     {
@@ -161,7 +159,7 @@ let tecnologias = [
         id: 22,
         nombre: "GitHub",
         urlImagen: "imagenes/devops_infraestructura_cloud/github.png",
-        prioridad: false,
+        prioridad: true,
         categoria: "DevOps e Infraestructura Cloud",
     },
     {
@@ -171,26 +169,33 @@ let tecnologias = [
         prioridad: false,
         categoria: "DevOps e Infraestructura Cloud",
     },
-    // Otras Habilidades Tecnicas
     {
         id: 24,
+        nombre: "Linux",
+        urlImagen: "imagenes/devops_infraestructura_cloud/linux.png",
+        prioridad: true,
+        categoria: "DevOps e Infraestructura Cloud",
+    },
+    // Otras Habilidades Tecnicas
+    {
+        id: 25,
         nombre: "Cisco",
         urlImagen: "imagenes/otras_habilidades_extra/cisco.png",
         prioridad: false,
         categoria: "Otras Habilidades Tecnicas",
     },
     {
-        id: 25,
+        id: 26,
         nombre: "UML",
         urlImagen: "imagenes/otras_habilidades_extra/uml.png",
         prioridad: false,
         categoria: "Otras Habilidades Tecnicas",
     },
     {
-        id: 26,
+        id: 27,
         nombre: "Power BI",
         urlImagen: "imagenes/otras_habilidades_extra/power_bi.png",
-        prioridad: false,
+        prioridad: true,
         categoria: "Otras Habilidades Tecnicas",
     },
 ]
@@ -215,11 +220,11 @@ let proyectos = [
             url: "https://github.com/SQuirosDev/Sistema-de-Gestion-de-Empleados"
         },
         demoYT1: {
-            estado: false,
-            texto: "Demo 1",
+            estado: true,
+            texto: "Demo YT",
             url: ""
         },
-        demoYT12: {
+        demoYT2: {
             estado: false,
             texto: "Demo 2",
             url: ""
@@ -248,11 +253,11 @@ let proyectos = [
             url: "https://github.com/SQuirosDev/Sistema-para-Restaurantes"
         },
         demoYT1: {
-            estado: false,
-            texto: "Demo 1",
+            estado: true,
+            texto: "Demo YT",
             url: ""
         },
-        demoYT12: {
+        demoYT2: {
             estado: false,
             texto: "Demo 2",
             url: ""
@@ -262,7 +267,7 @@ let proyectos = [
             texto: "Ver proyecto",
             url: ""
         },
-        prioridad: true
+        prioridad: false
     },
     /*Proyecto 3: Portafolio*/
     {
@@ -284,15 +289,15 @@ let proyectos = [
             texto: "Demo 1",
             url: ""
         },
-        demoYT12: {
+        demoYT2: {
             estado: false,
             texto: "Demo 2",
             url: ""
         },
         despliegues: {
-            estado: false,
+            estado: true,
             texto: "Ver proyecto",
-            url: ""
+            url: "https://squirosdev.github.io/Portafolio/"
         },
         prioridad: false
     },
@@ -316,15 +321,15 @@ let proyectos = [
             texto: "Demo 1",
             url: ""
         },
-        demoYT12: {
+        demoYT2: {
             estado: false,
             texto: "Demo 2",
             url: ""
         },
         despliegues: {
-            estado: false,
+            estado: true,
             texto: "Ver proyecto",
-            url: ""
+            url: "https://squirosdev.github.io/Tree/"
         },
         prioridad: false
     },    
@@ -339,18 +344,18 @@ let proyectos = [
         herramientas: [18,16],
         devopsInfraestructuraCloud: [23],
         github: {
-            estado: false,
+            estado: true,
             texto: "Codigo",
             url: ""
         },
         demoYT1: {
-            estado: false,
-            texto: "Demo 1",
+            estado: true,
+            texto: "Demo YT 1",
             url: ""
         },
-        demoYT12: {
-            estado: false,
-            texto: "Demo 2",
+        demoYT2: {
+            estado: true,
+            texto: "Demo YT 2",
             url: ""
         },
         despliegues: {
@@ -376,11 +381,43 @@ let proyectos = [
             url: "https://github.com/SQuirosDev/SQuirosDev.github.io/tree/main/portafolio"
         },
         demoYT1: {
-            estado: false,
-            texto: "Demo 1",
+            estado: true,
+            texto: "Demo YT",
             url: ""
         },
-        demoYT12: {
+        demoYT2: {
+            estado: false,
+            texto: "Demo 2",
+            url: ""
+        },
+        despliegues: {
+            estado: true,
+            texto: "Ver proyecto",
+            url: "https://squirosdev.github.io/portafolio/"
+        },
+        prioridad: true
+    },
+    /*Proyecto 7: App Inscripciones Curso Robotica*/
+    {
+        id: 7,
+        urlImagen: "imagenes/proyectos/app_inscripciones_curso_robotica.png",
+        nombre: "App Web para el TCU de Robotica",
+        descripcion: "Aplicacion para la informacion e inscripcion a mi curso de robotica <br> Proyecto Para TCU",
+        lenguajesProgrmacion: [7,8,1,4,5,6],
+        frameworkLibreria: [11, 12, 13],
+        herramientas: [18,16,15],
+        devopsInfraestructuraCloud: [],
+        github: {
+            estado: true,
+            texto: "Codigo",
+            url: ""
+        },
+        demoYT1: {
+            estado: true,
+            texto: "Demo YT",
+            url: ""
+        },
+        demoYT2: {
             estado: false,
             texto: "Demo 2",
             url: ""
@@ -391,38 +428,6 @@ let proyectos = [
             url: ""
         },
         prioridad: true
-    },
-    /*Proyecto 7: App Inscripciones Curso Robotica*/
-    {
-        id: 7,
-        urlImagen: "imagenes/proyectos/app_inscripciones_curso_robotica.png",
-        nombre: "App Web para Curso Robotica",
-        descripcion: "Aplicacion para la informacion e inscripcion a mi curso de robotica <br> Proyecto Para TCU",
-        lenguajesProgrmacion: [7,8,1,4,5,6],
-        frameworkLibreria: [11, 12, 13],
-        herramientas: [18,16,15],
-        devopsInfraestructuraCloud: [],
-        github: {
-            estado: false,
-            texto: "Codigo",
-            url: ""
-        },
-        demoYT1: {
-            estado: false,
-            texto: "Demo 1",
-            url: ""
-        },
-        demoYT12: {
-            estado: false,
-            texto: "Demo 2",
-            url: ""
-        },
-        despliegues: {
-            estado: false,
-            texto: "Ver proyecto",
-            url: ""
-        },
-        prioridad: false
     }
 ];
 
@@ -474,23 +479,31 @@ let certificaciones = [
 let textos = [
     {
         id: 1,
-        info: `Soy Sebastián Quirós, estudiante universitario avanzado de Ingeniería en Sistemas, con más del 80% de la carrera ya completada. Durante este tiempo, he adquirido conocimientos en varias tecnologias 
-                como C#, Python, JS, SQL y entre otros. La mayoría de estos conocimientos están complementados con certificados 
-                que respaldan mi aprendizaje y mi compromiso por seguir creciendo en el ámbito tecnológico. Mi experiencia como estudiante me ha permitido aplicar estos conocimientos en proyectos, 
-                siempre buscando mejorar y crecer como profesional.`,
+        info: `Soy Sebastián Quirós, estudiante avanzado de Ingeniería en Sistemas de Información, con más del 80% de la carrera completada. 
+        Mis conocimientos abarcan tecnologías como C# y sus frameworks, Python, JS, SQL y otras, los cuales he reforzado a través 
+        de certificaciones que respaldan mi aprendizaje y compromiso con la mejora continua. He aplicado estas habilidades en proyectos personales 
+        y académicos donde integro análisis, desarrollo y resolución de problemas para crear soluciones funcionales. Mi objetivo es seguir creciendo 
+        profesionalmente en áreas como programacion, BD, análisis de sistemas o datos, computacion en la nube, IA y seguridad TI.`,
     },
     {
         id: 2,
-        info: `Cuento con una amplia gama de conocimientos, incluyendo varias tecnologas como C#, Python, JS, SQL y entre otros.`,
+        info: `Cuento con una sólida base de conocimientos técnicos en diversas áreas de desarrollo y tecnología. Entre las principales tecnologías con las 
+        que he trabajado se encuentran:
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Lenguajes de Programación: C#, Python, JavaScript, SQL
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Frameworks y Librerías: .NET, .NET MVC, Bootstrap
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Herramientas y IDEs: Visual Studio 2022, VS Code, PyCharm, SQL Server
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• DevOps e Infraestructura Cloud: Git, GitHub, Azure, Linux
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Otras Habilidades Técnicas: UML, Power BI, Cisco`,
     },
     {
         id: 3,
-        info: `A lo largo de mi formación, mi experiencia se ha construido a través de la creación de proyectos personales y universitarios. He diseñado y desarrollado sistemas completos integrando frontend, 
-                backend y BD. Estas experiencias han sido clave para fortalecer mis habilidades de análisis, desarrollo y colaboración.`,
+        info: `A lo largo de mi formación académica, he desarrollado proyectos personales y universitarios en los cuales he aplicado tanto el backend 
+        y la gestión de bases de datos. Estas experiencias me han permitido fortalecer mis habilidades en: Análisis y diseño de soluciones, Desarrollo 
+        de software completo, Trabajo colaborativo y Adaptación rapida a nuevas herramientas y tecnologías`,
     },
     {
         id: 4,
-        info: `Actualmente, soy estudiante avanzado de Ingeniería en Sistemas en la Universidad Latina, donde he adquirido conocimientos avanzados en diferentes areas y tecnologias. Complemento mi formación con certificados en lenguajes 
-                de programación (C#, Python y SQL), desarrollo web (HTML, CSS y JavaScript) y otras tecnologias.`
+        info: `Actualmente, soy estudiante avanzado de Ingeniería en Sistemas en la Universidad Latina, donde he adquirido conocimientos avanzados en diferentes 
+        areas y tecnologias. Complemento mi formación con certificados en lenguajes de programación (C#, Python, JS y SQL) y otras tecnologias.`
     },
 ]
