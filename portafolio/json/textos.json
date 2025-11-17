@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "info": "Soy Sebastián Quirós, estudiante avanzado de Ingeniería en Sistemas de Información, con más del 80% de la carrera completada. Mis conocimientos abarcan tecnologías como C# y sus frameworks, Python, JS, SQL y otras, los cuales he reforzado a través de certificaciones que respaldan mi aprendizaje y compromiso con la mejora continua. He aplicado estas habilidades en proyectos personales y académicos donde integro análisis, desarrollo y resolución de problemas para crear soluciones funcionales. Mi objetivo es seguir creciendo profesionalmente en áreas como programacion, BD, análisis de sistemas o datos, computacion en la nube, IA y seguridad TI."
+    },
+    {
+        "id": 2,
+        "info": "Cuento con una sólida base de conocimientos técnicos en diversas áreas de desarrollo y tecnología. Entre las principales tecnologías con las que he trabajado se encuentran: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Lenguajes de Programación: C#, Python, JavaScript, SQL <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Frameworks y Librerías: .NET, .NET MVC, Bootstrap <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Herramientas y IDEs: Visual Studio 2022, VS Code, PyCharm, SQL Server <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• DevOps e Infraestructura Cloud: Git, GitHub, Azure, Linux <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Otras Habilidades Técnicas: UML, Power BI, Cisco"
+    },
+    {
+        "id": 3,
+        "info": "A lo largo de mi formación académica, he desarrollado proyectos personales y universitarios en los cuales he aplicado tanto el backend y la gestión de bases de datos. Estas experiencias me han permitido fortalecer mis habilidades en: Análisis y diseño de soluciones, Desarrollo de software completo, Trabajo colaborativo y Adaptación rapida a nuevas herramientas y tecnologías"
+    },
+    {
+        "id": 4,
+        "info": "Actualmente, soy estudiante avanzado de Ingeniería en Sistemas en la Universidad Latina, donde he adquirido conocimientos avanzados en diferentes areas y tecnologias. Complemento mi formación con certificados en lenguajes de programación (C#, Python, JS y SQL) y otras tecnologias."
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "urlImagen": "imagenes/certificados/python.png"
+    },
+    {
+        "id": 2,
+        "urlImagen": "imagenes/certificados/html.png"
+    },
+    {
+        "id": 3,
+        "urlImagen": "imagenes/certificados/js.png"
+    },
+    {
+        "id": 4,
+        "urlImagen": "imagenes/certificados/git.png"
+    },
+    {
+        "id": 5,
+        "urlImagen": "imagenes/certificados/sql.png"
+    },
+    {
+        "id": 6,
+        "urlImagen": "imagenes/certificados/ccna_1.png"
+    },
+    {
+        "id": 6,
+        "urlImagen": "imagenes/certificados/mvc.png"
+    },
+    {
+        "id": 7,
+        "urlImagen": "imagenes/certificados/ccna_2.png"
+    },
+    {
+        "id": 8,
+        "urlImagen": "imagenes/certificados/power_bi.png"
+    }
+]

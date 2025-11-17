@@ -1,4 +1,6 @@
-function mostrarTextos(){
+async function mostrarTextos(){
+    const textos = await cargarJSON('json/textos.json'); // obtenemos los datos
+
     for (let texto of textos){
 
         if(document.getElementById("contenedorTexto1")){

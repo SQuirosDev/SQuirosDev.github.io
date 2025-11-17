@@ -2,7 +2,9 @@
 
 // Modal
 
-function setupProjectModal() {
+async function setupProjectModal() {
+    const proyectos = await cargarJSON('json/proyectos.json'); // obtenemos los datos
+
     // 2. Cachear elementos del DOM
     const modal = document.getElementById('modal');
     const btnCerrar = document.getElementById('modal-close');
@@ -16,7 +18,7 @@ function setupProjectModal() {
     const buttonsCont = document.getElementById('modal-buttons');
 
     // 3. Función para abrir modal
-    function abrirModal(proy, pushUrl = true) {
+    async function abrirModal(proy, pushUrl = true) {
 
         if (pushUrl === undefined) pushUrl = true;
 
@@ -34,25 +36,25 @@ function setupProjectModal() {
         if (proy.lenguajesProgrmacion.length > 0){
             const titulo = document.getElementById('modal-lp-titulo')
             titulo.innerText = "Lenguajes de Programacion"
-            monedasLPHtml = monedasLenguagesProgramacionProyectos(proy)
+            monedasLPHtml = await mostrarMonedasLenguagesProgramacionProyectos(proy)
         }
 
         if (proy.frameworkLibreria.length > 0){
             const titulo = document.getElementById('modal-fl-titulo')
             titulo.innerText = "Frameworks y Librerias"
-            monedasfiHtml = monedasFrameworksLibreriasProyectos(proy);
+            monedasfiHtml = await mostrarMonedasFrameworksLibreriasProyectos(proy);
         }
 
         if (proy.herramientas.length > 0){
             const titulo = document.getElementById('modal-hi-titulo')
             titulo.innerText = "Herramientas y IDEs"
-            monedashiHtml = monedasHerramientasIDEsProyectos(proy);
+            monedashiHtml = await mostrarMonedasHerramientasIDEsProyectos(proy);
         }
 
         if (proy.devopsInfraestructuraCloud.length > 0){
             const titulo = document.getElementById('modal-dic-titulo');
             titulo.innerText = "DevOps e Infraestructura Cloud";
-            monedasdicHtml = monedasDevOpsInfraestructuraCloudProyectos(proy);
+            monedasdicHtml = await mostrarMonedasDevOpsInfraestructuraCloudProyectos(proy);
         }
         
         contlp.innerHTML = monedasLPHtml;

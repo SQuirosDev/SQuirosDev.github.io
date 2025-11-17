@@ -1,6 +1,9 @@
-function monedasLenguagesProgramacionProyectos(proyecto){
+async function mostrarMonedasLenguagesProgramacionProyectos(proyecto){
+    const tecnologias = await cargarJSON('json/tecnologias.json'); // obtenemos los datos
+
     const ids = proyecto.lenguajesProgrmacion || [];
     let html = '';
+
     for (let i = 0; i < ids.length; i++) {
         const tech = tecnologias.find(t => t.id === ids[i]);
         if (tech && tech.categoria === 'Lenguajes de Programacion') {
@@ -10,7 +13,9 @@ function monedasLenguagesProgramacionProyectos(proyecto){
     return html;
 }
 
-function monedasFrameworksLibreriasProyectos(proyecto){
+async function mostrarMonedasFrameworksLibreriasProyectos(proyecto){
+    const tecnologias = await cargarJSON('json/tecnologias.json'); // obtenemos los datos
+
     const ids = proyecto.frameworkLibreria || [];
     let html = '';
     for (let i = 0; i < ids.length; i++) {
@@ -22,7 +27,9 @@ function monedasFrameworksLibreriasProyectos(proyecto){
     return html;
 }
 
-function monedasHerramientasIDEsProyectos(proyecto){        
+async function mostrarMonedasHerramientasIDEsProyectos(proyecto){      
+    const tecnologias = await cargarJSON('json/tecnologias.json'); // obtenemos los datos
+
     const ids = proyecto.herramientas || [];
     let html = '';
     for (let i = 0; i < ids.length; i++) {
@@ -34,7 +41,9 @@ function monedasHerramientasIDEsProyectos(proyecto){
     return html;
 }
 
-function monedasDevOpsInfraestructuraCloudProyectos(proyecto){
+async function mostrarMonedasDevOpsInfraestructuraCloudProyectos(proyecto){
+    const tecnologias = await cargarJSON('json/tecnologias.json'); // obtenemos los datos
+
     const ids = proyecto.devopsInfraestructuraCloud || [];
     let html = '';
     for (let i = 0; i < ids.length; i++) {

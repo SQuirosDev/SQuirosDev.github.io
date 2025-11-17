@@ -1,4 +1,6 @@
-function cartasProyectos() {
+async function mostrarCartasProyectos() {
+    const proyectos = await cargarJSON('json/proyectos.json'); // obtenemos los datos
+
     const contCP = document.getElementById('contenedorCartasProyectos');
 
     const filtrarCP = contCP.classList.contains('filtrado');
@@ -13,11 +15,11 @@ function cartasProyectos() {
         }
 
         // Construimos las monedas y la carta en un solo lugar
-        const monedasLP = monedasLenguagesProgramacionProyectos(proyecto);
-        const monedasFL = monedasFrameworksLibreriasProyectos(proyecto);
-        const monedasHI = monedasHerramientasIDEsProyectos(proyecto);
-        const monedasDIC = monedasDevOpsInfraestructuraCloudProyectos(proyecto);
-        cartasProyectos += cartasEstructura(proyecto, monedasLP, monedasFL, monedasHI, monedasDIC);
+        const monedasLP = await mostrarMonedasLenguagesProgramacionProyectos(proyecto);
+        const monedasFL = await mostrarMonedasFrameworksLibreriasProyectos(proyecto);
+        const monedasHI = await mostrarMonedasHerramientasIDEsProyectos(proyecto);
+        const monedasDIC = await mostrarMonedasDevOpsInfraestructuraCloudProyectos(proyecto);
+        cartasProyectos += await cartasEstructura(proyecto, monedasLP, monedasFL, monedasHI, monedasDIC);
     }
 
     contCP.innerHTML = cartasProyectos
