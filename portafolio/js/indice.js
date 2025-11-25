@@ -14,7 +14,7 @@ function copiarTelefono() {
 
 function descargarCV() {
     const link = document.createElement('a');
-    link.href = 'https://squirosdev.github.io/documentos/cv.pdf'; 
+    link.href = 'https://squirosdev.github.io/documentos/CV Sebastian Quiros.pdf'; 
     link.download = 'cv.pdf';
     link.click();
     alert('CV descargado correctamente');

@@ -15,7 +15,7 @@ async function mostrarMonedasLenguajesProgramacion (){
         }
     }
 
-    contTituloTec.innerHTML = "Lenguajes de Programacion"
+    contTituloTec.innerHTML = "Lenguajes de Programación"
     contMonedasTec.innerHTML = monedasTecnologias;
 }
 
@@ -36,7 +36,7 @@ async function mostrarMonedasFrameworkLibrerias (){
         }  
     }
 
-    contTituloTec.innerHTML = "Frameworks y Librerias"
+    contTituloTec.innerHTML = "Frameworks"
     contMonedasTec.innerHTML = monedasTecnologias;
 }
 
@@ -57,7 +57,7 @@ async function mostrarMonedasHerramientasIDEs (){
         }  
     }
 
-    contTituloTec.innerHTML = "Herramientas y IDEs"
+    contTituloTec.innerHTML = "Herramientas"
     contMonedasTec.innerHTML = monedasTecnologias;
 }
 
@@ -78,7 +78,7 @@ async function mostrarMonedasDevOpsInfraestructura (){
         }  
     }
 
-    contTituloTec.innerHTML = "DevOps e Infraestructura Cloud"
+    contTituloTec.innerHTML = "DevOps"
     contMonedasTec.innerHTML = monedasTecnologias;
 }
 
@@ -99,7 +99,7 @@ async function mostrarMonedasOtrasHabilidadesTecnicas (){
         }  
     }
 
-    contTituloTec.innerHTML = "Otras Habilidades Tecnicas"
+    contTituloTec.innerHTML = "Otras Habilidades Técnicas"
     contMonedasTec.innerHTML = monedasTecnologias;
 }
 

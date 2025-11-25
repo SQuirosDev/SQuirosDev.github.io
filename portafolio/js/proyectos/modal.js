@@ -35,25 +35,25 @@ async function setupProjectModal() {
 
         if (proy.lenguajesProgrmacion.length > 0){
             const titulo = document.getElementById('modal-lp-titulo')
-            titulo.innerText = "Lenguajes de Programacion"
+            titulo.innerText = "Lenguajes de Programación"
             monedasLPHtml = await mostrarMonedasLenguagesProgramacionProyectos(proy)
         }
 
         if (proy.frameworkLibreria.length > 0){
             const titulo = document.getElementById('modal-fl-titulo')
-            titulo.innerText = "Frameworks y Librerias"
+            titulo.innerText = "Frameworks"
             monedasfiHtml = await mostrarMonedasFrameworksLibreriasProyectos(proy);
         }
 
         if (proy.herramientas.length > 0){
             const titulo = document.getElementById('modal-hi-titulo')
-            titulo.innerText = "Herramientas y IDEs"
+            titulo.innerText = "Herramientas"
             monedashiHtml = await mostrarMonedasHerramientasIDEsProyectos(proy);
         }
 
         if (proy.devopsInfraestructuraCloud.length > 0){
             const titulo = document.getElementById('modal-dic-titulo');
-            titulo.innerText = "DevOps e Infraestructura Cloud";
+            titulo.innerText = "DevOps";
             monedasdicHtml = await mostrarMonedasDevOpsInfraestructuraCloudProyectos(proy);
         }
         
