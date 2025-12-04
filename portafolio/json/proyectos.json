@@ -9,12 +9,12 @@
         "herramientas": [18],
         "devopsInfraestructuraCloud": [],
         "github": {
-            "estado": true,
+            "estado": false,
             "texto": "Código",
             "url": "https://github.com/SQuirosDev/Sistema-de-Gestion-de-Empleados"
         },
         "demoYT1": {
-            "estado": true,
+            "estado": false,
             "texto": "Demo YT",
             "url": ""
         },
@@ -40,12 +40,12 @@
         "herramientas": [20, 18, 17],
         "devopsInfraestructuraCloud": [],
         "github": {
-            "estado": true,
+            "estado": false,
             "texto": "Código",
             "url": "https://github.com/SQuirosDev/Sistema-para-Restaurantes"
         },
         "demoYT1": {
-            "estado": true,
+            "estado": false,
             "texto": "Demo YT",
             "url": ""
         },
@@ -133,17 +133,17 @@
         "herramientas": [20, 18],
         "devopsInfraestructuraCloud": [25],
         "github": {
-            "estado": true,
+            "estado": false,
             "texto": "Código",
             "url": ""
         },
         "demoYT1": {
             "estado": true,
             "texto": "Demo YT 1",
-            "url": ""
+            "url": "https://youtu.be/qQe7ELCxNqE?si=gDDpqrj1oGOTxs88"
         },
         "demoYT2": {
-            "estado": true,
+            "estado": false,
             "texto": "Demo YT 2",
             "url": ""
         },
@@ -195,12 +195,12 @@
         "herramientas": [20, 18, 17],
         "devopsInfraestructuraCloud": [],
         "github": {
-            "estado": true,
+            "estado": false,
             "texto": "Código",
             "url": ""
         },
         "demoYT1": {
-            "estado": true,
+            "estado": false,
             "texto": "Demo YT",
             "url": ""
         },
@@ -217,3 +217,4 @@
         "prioridad": true
     }
 ]
+
