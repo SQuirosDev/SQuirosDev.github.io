@@ -1,5 +1,5 @@
 async function mostrarCartasProyectos() {
-    const proyectos = await cargarJSON('json/proyectos.json'); // obtenemos los datos
+    const proyectos = await cargarJSON('../json/proyectos.json'); // obtenemos los datos
 
     const contCP = document.getElementById('contenedorCartasProyectos');
 

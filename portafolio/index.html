@@ -57,11 +57,11 @@
                         </div>
                         <ul class="menu-items hide" id="menu-items">
                             <li><a class="menu-item tron-text" href="index.html">Inicio</a></li>
-                            <li><a class="menu-item tron-text" href="sobreMi.html">Sobre Mi</a></li>
-                            <li><a class="menu-item tron-text" href="certificados.html">Certificados</a></li>
-                            <li><a class="menu-item tron-text" href="tecnologias.html">Tecnologias</a></li>
-                            <li><a class="menu-item tron-text" href="proyectos.html">Proyectos</a></li>
-                            <li><a class="menu-item tron-text" href="documentos/CV Sebastian Quiros.pdf" target="_blank">CV</a></li>
+                            <li><a class="menu-item tron-text" href="html/sobreMi.html">Sobre Mi</a></li>
+                            <li><a class="menu-item tron-text" href="html/certificados.html">Certificados</a></li>
+                            <li><a class="menu-item tron-text" href="html/tecnologias.html">Tecnologias</a></li>
+                            <li><a class="menu-item tron-text" href="html/proyectos.html">Proyectos</a></li>
+                            <li><a class="menu-item tron-text" href="doc/CV Sebastian Quiros.pdf" target="_blank">CV</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -71,9 +71,11 @@
                     <div class="d-flex justify-content-center">
                         <div class="row seccion-intro">
                             <!--Imagen Usuario-->
-                            <div class="col-sm-12 col-md-6 col-lg-6">
+                            <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center">
                                 <!--Imagen-->
-                                <img class="user img-fluid tron-box" src="imagenes/user.png" alt="Foto de perfil">
+                                <div class="tron-box user-container">
+                                    <img class="img-fluid user-img" src="img/usuario/sebastian_quiros_sin_fondo.png" alt="Foto de perfil">
+                                </div>
                             </div>
                             <!--Informacion y Botones Usuarios-->
                             <div class="col-sm-12 col-md-6 col-lg-6 d-flex align-items-center flex-column gap-3">
@@ -87,12 +89,14 @@
                                 </div>
                                 <!--Botones-->
                                 <div class="row">
-                                        <div class="col-sm-12 col-md-6 col-lg-6 mt-1 mb-1">
+                                        <div class="col-sm-12 col-md-5 col-lg-5 mt-1 mb-1">
                                             <button class="boton btn-mediano tron-boton " onclick="descargarCV()">Descargar CV</button>
                                         </div>
-                                        <div class="col-sm-12 col-md-6 col-lg-6 mt-1 mb-1">
+                                        <div class="col-sm-12 col-md-7 col-lg-7 mt-1 mb-1">
                                                 <a href="https://www.linkedin.com/in/sebastian-quiros/" target="_blank"><div class="boton btn-pequeno tron-boton"><i class="fa-brands fa-linkedin-in fa-xl icono-blanco"></i></div></a>
                                                 <a href="https://github.com/SQuirosDev" target="_blank"><div class="boton btn-pequeno tron-boton"><i class="fa-brands fa-github fa-xl icono-blanco"></i></div></a>
+                                                <a href="https://www.credly.com/users/sebastian-quiros-esquivel" target="_blank"><div class="boton btn-pequeno tron-boton"><i class="fa-solid fa-c fa-xl icono-blanco"></i></div></a>
+                                                <a href="https://youtube.com/@squirosdev" target="_blank"><div class="boton btn-pequeno tron-boton"><i class="fa-brands fa-youtube fa-xl icono-blanco"></i></div></a>
                                         </div>
                                     </div>
                                 </div>
@@ -124,8 +128,8 @@
 
                                 <!--Botones-->
                                 <div class="botones-S">
-                                    <a href="sobreMi.html" class="boton btn-grande tron-boton">Más Información</a>
-                                    <a href="certificados.html" class="boton btn-grande tron-boton">Certificados</a>
+                                    <a href="html/sobreMi.html" class="boton btn-grande tron-boton">Más Información</a>
+                                    <a href="html/certificados.html" class="boton btn-grande tron-boton">Certificados</a>
                                 </div>
                             </div>
 
@@ -139,9 +143,11 @@
                                     <!--Redes Sociales-->
                                     <div class="col-sm-12 col-md-4 col-lg-4 personal d-flex flex-column gap-3">
                                         <h2 class="tron-text-small">Redes Sociales</h2>
-                                        <div class="flex-padre-S">
-                                            <a href="https://www.linkedin.com/in/sebastian-quiros/" target="_blank"><div class="boton btn-pequeno tron-boton"><i class="fa-brands fa-linkedin-in fa-xl icono-blanco"></i></div></a>
-                                            <a href="https://github.com/SQuirosDev" target="_blank"><div class="boton btn-pequeno tron-boton"><i class="fa-brands fa-github fa-xl icono-blanco"></i></div></a>
+                                        <div class="flex-padre-S-space">
+                                                <a href="https://www.linkedin.com/in/sebastian-quiros/" target="_blank"><div class="boton btn-pequeno tron-boton"><i class="fa-brands fa-linkedin-in fa-xl icono-blanco"></i></div></a>
+                                                <a href="https://github.com/SQuirosDev" target="_blank"><div class="boton btn-pequeno tron-boton"><i class="fa-brands fa-github fa-xl icono-blanco"></i></div></a>
+                                                <a href="https://www.credly.com/users/sebastian-quiros-esquivel" target="_blank"><div class="boton btn-pequeno tron-boton"><i class="fa-solid fa-c fa-xl icono-blanco"></i></div></a>
+                                                <a href="https://youtube.com/@squirosdev" target="_blank"><div class="boton btn-pequeno tron-boton"><i class="fa-brands fa-youtube fa-xl icono-blanco"></i></div></a>
                                         </div>
                                     </div>
 
@@ -183,7 +189,7 @@
 
                                 <!--Boton-->
                                 <div class="botones-S d-flex flex-row">
-                                    <a href="tecnologias.html" class="boton btn-grande tron-boton">Más Tecnologías</a>
+                                    <a href="html/tecnologias.html" class="boton btn-grande tron-boton">Más Tecnologías</a>
                                 </div>
 
                         </div>
@@ -209,7 +215,7 @@
 
                                 <!--Boton-->
                                 <div class="d-flex justify-content-center gap-3">
-                                    <a href="proyectos.html" class="boton btn-grande tron-boton">Más Proyectos</a>
+                                    <a href="html/proyectos.html" class="boton btn-grande tron-boton">Más Proyectos</a>
                                 </div>
 
                             </div>
@@ -235,8 +241,10 @@
                             <button class="boton tron-boton" onclick="copiarTelefono()">8444 - 1313</button>
                         </div>
                         <div class="col-12">
-                            <a href="https://www.linkedin.com/in/sebastian-quiros/" target="_blank"><div class="boton btn-pequeno tron-boton"><i class="fa-brands fa-linkedin-in fa-xl icono-blanco"></i></div></a>
-                            <a href="https://github.com/SQuirosDev" target="_blank"><div class="boton btn-pequeno tron-boton"><i class="fa-brands fa-github fa-xl icono-blanco"></i></div></a>
+                                <a href="https://www.linkedin.com/in/sebastian-quiros/" target="_blank"><div class="boton btn-pequeno tron-boton"><i class="fa-brands fa-linkedin-in fa-xl icono-blanco"></i></div></a>
+                                <a href="https://github.com/SQuirosDev" target="_blank"><div class="boton btn-pequeno tron-boton"><i class="fa-brands fa-github fa-xl icono-blanco"></i></div></a>
+                                <a href="https://www.credly.com/users/sebastian-quiros-esquivel" target="_blank"><div class="boton btn-pequeno tron-boton"><i class="fa-solid fa-c fa-xl icono-blanco"></i></div></a>
+                                <a href="https://youtube.com/@squirosdev" target="_blank"><div class="boton btn-pequeno tron-boton"><i class="fa-brands fa-youtube fa-xl icono-blanco"></i></div></a>
                         </div>
                     </div>
 
@@ -245,7 +253,7 @@
                     </div>
 
                     <p class="copyright">
-                        © 2025 Sebastián Quirós. Todos los derechos reservados.
+                        © 2026 Sebastián Quirós. Todos los derechos reservados.
                     </p>
                 </div>
             </footer>

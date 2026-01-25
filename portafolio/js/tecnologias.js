@@ -1,5 +1,7 @@
+const urlBase = "../json/tecnologias/"
+
 async function mostrarMonedasLenguajesProgramacion (){
-    const tecnologias = await cargarJSON('json/tecnologias.json'); // obtenemos los datos
+    const tecnologias = await cargarJSON(urlBase + 'lenguajes_programacion.json'); // obtenemos los datos
 
     const contTituloTec = document.getElementById('ContenedorTituloTec');
     const contMonedasTec = document.getElementById('ContenedorMonedasTec');
@@ -20,7 +22,7 @@ async function mostrarMonedasLenguajesProgramacion (){
 }
 
 async function mostrarMonedasFrameworkLibrerias (){
-    const tecnologias = await cargarJSON('json/tecnologias.json'); // obtenemos los datos
+    const tecnologias = await cargarJSON(urlBase + 'frameworks.json'); // obtenemos los datos
 
     const contTituloTec = document.getElementById('ContenedorTituloTec');
     const contMonedasTec = document.getElementById('ContenedorMonedasTec');
@@ -41,7 +43,7 @@ async function mostrarMonedasFrameworkLibrerias (){
 }
 
 async function mostrarMonedasHerramientasIDEs (){
-    const tecnologias = await cargarJSON('json/tecnologias.json'); // obtenemos los datos
+    const tecnologias = await cargarJSON(urlBase + 'herramientas.json'); // obtenemos los datos
 
     const contTituloTec = document.getElementById('ContenedorTituloTec');
     const contMonedasTec = document.getElementById('ContenedorMonedasTec');
@@ -62,7 +64,7 @@ async function mostrarMonedasHerramientasIDEs (){
 }
 
 async function mostrarMonedasDevOpsInfraestructura (){
-    const tecnologias = await cargarJSON('json/tecnologias.json'); // obtenemos los datos
+    const tecnologias = await cargarJSON(urlBase + 'devops.json'); // obtenemos los datos
 
     const contTituloTec = document.getElementById('ContenedorTituloTec');
     const contMonedasTec = document.getElementById('ContenedorMonedasTec');
@@ -83,7 +85,7 @@ async function mostrarMonedasDevOpsInfraestructura (){
 }
 
 async function mostrarMonedasOtrasHabilidadesTecnicas (){
-    const tecnologias = await cargarJSON('json/tecnologias.json'); // obtenemos los datos
+    const tecnologias = await cargarJSON(urlBase + 'otras_habilidades.json'); // obtenemos los datos
 
     const contTituloTec = document.getElementById('ContenedorTituloTec');
     const contMonedasTec = document.getElementById('ContenedorMonedasTec');
@@ -104,11 +106,15 @@ async function mostrarMonedasOtrasHabilidadesTecnicas (){
 }
 
 async function mostrarMonedasTecnologiasPrincipales(){
-    const tecnologias = await cargarJSON('json/tecnologias.json'); // obtenemos los datos
-    
     const contTP = document.getElementById('contenedorMonedasTP')
-
     const filtrarTP = contTP.classList.contains('filtrado');
+    const tecnologiasJSON = ["lenguajes_programacion.json","frameworks.json","herramientas.json","devops.json","otras_habilidades.json"]
+    let tecnologias = []
+
+    for (let json of tecnologiasJSON){
+        const datos = await cargarJSON(urlBase + json);
+        tecnologias = tecnologias.concat(datos);
+    }
 
     let monedasTecnologiasPrincipales = '';
 

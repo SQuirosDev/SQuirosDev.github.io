@@ -3,7 +3,7 @@
 // Modal
 
 async function setupProjectModal() {
-    const proyectos = await cargarJSON('json/proyectos.json'); // obtenemos los datos
+    const proyectos = await cargarJSON('../json/proyectos.json'); // obtenemos los datos
 
     // 2. Cachear elementos del DOM
     const modal = document.getElementById('modal');

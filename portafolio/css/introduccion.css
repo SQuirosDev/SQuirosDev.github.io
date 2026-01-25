@@ -22,22 +22,37 @@
     padding: 30px;
 }
 
-.user{ /*Imagen / Se puede eliminar con la foto agregada*/
+.user-container{ /*Imagen / Se puede eliminar con la foto agregada*/
     background: #1e1f22;
     height: 400px;
     width: 400px;
     /*border: 1px solid rgba(255, 255, 255); /* Borde semitransparente */
     border-radius: 50%;
     /*box-shadow: 0 0 15px rgba(128, 128, 128); /* Sombra */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.user-img{
+    background: transparent;
+    height: 380px;
+    width: 370px;
+    border-radius: 50%;
 }
 
 /*-----------------------------------------------------------------------*/
 
 @media (max-width: 780px) { 
-    .user {
-        width: 70%; 
+    .user-container {
+        width: 90%; 
         height: auto;
         margin: 0 auto; 
+    }
+
+    .user-img{
+        height: 95%;
+        width: 95%; 
     }
 
     .seccion-intro{

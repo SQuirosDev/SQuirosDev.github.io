@@ -34,6 +34,9 @@
     flex-wrap: wrap;
     gap: 20px; 
 }
+.flex-padre-S-space{
+    margin-bottom: 20px;
+}
 
 .boton-contacto-texto{ /*da forma el boton y acomoda la imagen de adentro*/
     width: 52px;

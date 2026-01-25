@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "nombre": "VS Code",
+        "urlImagen": "../img/herramientas_ides/vs_code.png",
+        "prioridad": true,
+        "categoria": "Herramientas y IDEs"
+    },
+    {
+        "id": 2,
+        "nombre": "VS 2022",
+        "urlImagen": "../img/herramientas_ides/vs_2022.png",
+        "prioridad": true,
+        "categoria": "Herramientas y IDEs"
+    },
+    {
+        "id": 3,
+        "nombre": "PyCharm",
+        "urlImagen": "../img/herramientas_ides/py_charm.png",
+        "prioridad": false,
+        "categoria": "Herramientas y IDEs"
+    },
+    {
+        "id": 4,
+        "nombre": "SQL Server",
+        "urlImagen": "../img/herramientas_ides/sql_server.png",
+        "prioridad": true,
+        "categoria": "Herramientas y IDEs"
+    },
+    {
+        "id": 5,
+        "nombre": "Git",
+        "urlImagen": "../img/herramientas_ides/git.png",
+        "prioridad": false,
+        "categoria": "Herramientas y IDEs"
+    },
+    {
+        "id": 6,
+        "nombre": "MySQL",
+        "urlImagen": "../img/herramientas_ides/my_sql.png",
+        "prioridad": true,
+        "categoria": "Herramientas y IDEs"
+    },
+    {
+        "id": 7,
+        "nombre": "Postman",
+        "urlImagen": "../img/herramientas_ides/postman.png",
+        "prioridad": true,
+        "categoria": "Herramientas y IDEs"
+    }
+]

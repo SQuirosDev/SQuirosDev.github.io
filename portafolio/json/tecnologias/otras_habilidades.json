@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "nombre": "Cisco",
+        "urlImagen": "../img/otras_habilidades_extra/cisco.png",
+        "prioridad": false,
+        "categoria": "Otras Habilidades Tecnicas"
+    },
+    {
+        "id": 2,
+        "nombre": "UML",
+        "urlImagen": "../img/otras_habilidades_extra/uml.png",
+        "prioridad": false,
+        "categoria": "Otras Habilidades Tecnicas"
+    },
+    {
+        "id": 3,
+        "nombre": "Power BI",
+        "urlImagen": "../img/otras_habilidades_extra/power_bi.png",
+        "prioridad": true,
+        "categoria": "Otras Habilidades Tecnicas"
+    },
+    {
+        "id": 4,
+        "nombre": "Linux",
+        "urlImagen": "../img/devops_infraestructura_cloud/linux.png",
+        "prioridad": true,
+        "categoria": "Otras Habilidades Tecnicas"
+    }
+]

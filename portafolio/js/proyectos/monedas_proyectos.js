@@ -1,7 +1,8 @@
 async function mostrarMonedasLenguagesProgramacionProyectos(proyecto){
-    const tecnologias = await cargarJSON('json/tecnologias.json'); // obtenemos los datos
+    const tecnologias = await cargarJSON('../json/tecnologias/lenguajes_programacion.json'); // obtenemos los datos
 
     const ids = proyecto.lenguajesProgrmacion || [];
+    
     let html = '';
 
     for (let i = 0; i < ids.length; i++) {
@@ -14,7 +15,7 @@ async function mostrarMonedasLenguagesProgramacionProyectos(proyecto){
 }
 
 async function mostrarMonedasFrameworksLibreriasProyectos(proyecto){
-    const tecnologias = await cargarJSON('json/tecnologias.json'); // obtenemos los datos
+    const tecnologias = await cargarJSON('../json/tecnologias/frameworks.json'); // obtenemos los datos
 
     const ids = proyecto.frameworkLibreria || [];
     let html = '';
@@ -28,7 +29,7 @@ async function mostrarMonedasFrameworksLibreriasProyectos(proyecto){
 }
 
 async function mostrarMonedasHerramientasIDEsProyectos(proyecto){      
-    const tecnologias = await cargarJSON('json/tecnologias.json'); // obtenemos los datos
+    const tecnologias = await cargarJSON('../json/tecnologias/herramientas.json'); // obtenemos los datos
 
     const ids = proyecto.herramientas || [];
     let html = '';
@@ -42,7 +43,7 @@ async function mostrarMonedasHerramientasIDEsProyectos(proyecto){
 }
 
 async function mostrarMonedasDevOpsInfraestructuraCloudProyectos(proyecto){
-    const tecnologias = await cargarJSON('json/tecnologias.json'); // obtenemos los datos
+    const tecnologias = await cargarJSON('../json/tecnologias/devops.json'); // obtenemos los datos
 
     const ids = proyecto.devopsInfraestructuraCloud || [];
     let html = '';
