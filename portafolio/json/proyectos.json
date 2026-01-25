@@ -1,0 +1,219 @@
+[
+    {
+        "id": 1,
+        "urlImagen": "../img/proyectos/sistema_gestion_empleados.png",
+        "nombre": "Sistema de Gestión de Empleados",
+        "descripcion": "Este proyecto fue desarrollado como parte del curso de Programación Orientada a Objetos y representa mi primer acercamiento a la creación de aplicaciones completas. Se trata de un sistema de gestión de empleados que permite realizar operaciones básicas como agregar nuevos registros, realizar búsquedas por empleado, consultar la lista completa de empleados y calcular el salario acumulado de la empresa. <br> El proyecto fue diseñado y desarrollado durante un cuatrimestre completo. La información se almacenaba en archivos de texto, lo cual se alineaba con los requerimientos del curso y mis conocimientos en ese momento. Aunque formaba parte de un equipo, fui el único que desarrolló completamente el proyecto, desde el backend hasta el diseño del frontend. <br> Este proyecto fue un reto significativo porque fue el primero que realicé tanto a nivel personal como universitario, y en aquel momento contaba con conocimientos básicos de programación. A pesar de unas pocas funciones que quedaron pendientes por falta de experiencia, cumplió con los objetivos académicos y personales y fue un punto clave para mi crecimiento como desarrollador.",
+        "lenguajesProgrmacion": [1],
+        "frameworkLibreria": [1],
+        "herramientas": [2],
+        "devopsInfraestructuraCloud": [],
+        "github": {
+            "estado": true,
+            "texto": "Código",
+            "url": "https://github.com/SQuirosDev/Sistema-de-Gestion-de-Empleados"
+        },
+        "demoYT1": {
+            "estado": true,
+            "texto": "Demo YT",
+            "url": ""
+        },
+        "demoYT2": {
+            "estado": false,
+            "texto": "Demo 2",
+            "url": ""
+        },
+        "despliegues": {
+            "estado": false,
+            "texto": "Ver proyecto",
+            "url": ""
+        },
+        "prioridad": false
+    },
+    {
+        "id": 2,
+        "urlImagen": "../img/proyectos/sistema_restaurantes.png",
+        "nombre": "Aplicación Web de Gestión para Restaurantes",
+        "descripcion": "Este proyecto consistió en el desarrollo de un aplicación web para la gestión de un restaurante, realizado como parte del curso de Programación Web. La aplicación incluye funcionalidades esenciales como comentarios de usuarios, facturación, reservas y un sistema de autenticación con inicio de sesión simple. Fue un proyecto de alta complejidad debido a que requería integrar backend, frontend y base de datos, lo cual representó un gran salto respecto a mi anterior experiencia desarrollando la aplicación local.<br>El desarrollo de la aplicación se hizo de forma colaborativa, siendo yo el encargado de implementar toda la lógica del backend, incluyendo la conexión con la base de datos, las validaciones de entrada y el desarrollo de APIs, además de la parte lógica del frontend para interactuar con los formularios, conectarse con los endpoints y validar los datos.<br>Este proyecto se desarrolló durante un cuatrimestre y fue una experiencia muy enriquecedora, ya que tuvimos que enfrentarnos a retos como el uso de tecnologías que no dominábamos y la creación de una base de datos que finalmente quedó en NoSQL debido a la falta de conocimientos sobre llaves primarias y foráneas. A pesar de no estar totalmente terminado como lo hubiera deseado, es un proyecto que marcó mi transición hacia el desarrollo web.",
+        "lenguajesProgrmacion": [6, 7, 1, 3, 4, 5],
+        "frameworkLibreria": [2, 3, 4, 6],
+        "herramientas": [4, 2, 1],
+        "devopsInfraestructuraCloud": [],
+        "github": {
+            "estado": true,
+            "texto": "Código",
+            "url": "https://github.com/SQuirosDev/Sistema-para-Restaurantes"
+        },
+        "demoYT1": {
+            "estado": true,
+            "texto": "Demo YT",
+            "url": ""
+        },
+        "demoYT2": {
+            "estado": false,
+            "texto": "Demo 2",
+            "url": ""
+        },
+        "despliegues": {
+            "estado": false,
+            "texto": "Ver proyecto",
+            "url": ""
+        },
+        "prioridad": false
+    },
+    {
+        "id": 3,
+        "urlImagen": "../img/proyectos/portafolio.png",
+        "nombre": "Portafolio Profesional v1",
+        "descripcion": "Este fue mi primer portafolio personal, desarrollado con el objetivo de mostrar de manera organizada mi información académica, habilidades tecnológicas, proyectos, certificados y currículum. Decidí construirlo como una aplicación dinámica, donde el contenido no estuviera \"quemado\" en el HTML, sino que pudiera ser gestionado mediante un JSON en JS, permitiendo la fácil actualización de los datos.<br>El desarrollo se completó en aproximadamente una semana y fue crucial para formalizar la presentación profesional de mi perfil. Además, fue el primer proyecto donde apliqué mis conocimientos en diseño y lógica de frontend, utilizando jQuery para la carga de información. Este proyecto refleja mi compromiso con la profesionalización y mejora continua, siendo un importante paso en mi transición hacia proyectos más avanzados.",
+        "lenguajesProgrmacion": [3, 4, 5],
+        "frameworkLibreria": [4, 6],
+        "herramientas": [1],
+        "devopsInfraestructuraCloud": [1],
+        "github": {
+            "estado": true,
+            "texto": "Código",
+            "url": "https://github.com/SQuirosDev/SQuirosDev.github.io/tree/main/Portafolio"
+        },
+        "demoYT1": {
+            "estado": false,
+            "texto": "Demo 1",
+            "url": ""
+        },
+        "demoYT2": {
+            "estado": false,
+            "texto": "Demo 2",
+            "url": ""
+        },
+        "despliegues": {
+            "estado": true,
+            "texto": "Ver proyecto",
+            "url": "https://squirosdev.github.io/Portafolio/"
+        },
+        "prioridad": false
+    },
+    {
+        "id": 4,
+        "urlImagen": "../img/proyectos/linktree.png",
+        "nombre": "Link Tree",
+        "descripcion": "Este proyecto surge como una solución personal para centralizar mi portafolio y mis redes sociales en un solo punto de acceso. Diseñado como una página rápida para ser compartida desde mi perfil de Instagram, su objetivo principal es facilitar el acceso a mi contenido profesional.<br>El desarrollo tomó alrededor de dos horas, aprovechando la experiencia adquirida en proyectos previos, y resultó una tarea ágil y eficiente. Aunque sencillo en funcionalidad, cumple perfectamente su propósito y demuestra mi capacidad para crear soluciones funcionales y bien diseñadas en cortos períodos de tiempo.",
+        "lenguajesProgrmacion": [3, 4],
+        "frameworkLibreria": [6],
+        "herramientas": [1],
+        "devopsInfraestructuraCloud": [1],
+        "github": {
+            "estado": true,
+            "texto": "Código",
+            "url": "https://github.com/SQuirosDev/SQuirosDev.github.io/tree/main/Tree"
+        },
+        "demoYT1": {
+            "estado": false,
+            "texto": "Demo 1",
+            "url": ""
+        },
+        "demoYT2": {
+            "estado": false,
+            "texto": "Demo 2",
+            "url": ""
+        },
+        "despliegues": {
+            "estado": true,
+            "texto": "Ver proyecto",
+            "url": "https://squirosdev.github.io/Tree/"
+        },
+        "prioridad": false
+    },
+    {
+        "id": 5,
+        "urlImagen": "../img/proyectos/ecommerce.png",
+        "nombre": "Aplicación Móvil de Ecommerce",
+        "descripcion": "Este proyecto fue desarrollado como parte del curso de Programación Móvil y supuso un gran desafío y una etapa de crecimiento profesional. Se trata de una aplicación móvil de ecommerce con múltiples funcionalidades avanzadas, entre las cuales se incluyen registro con verificación por correo, inicio de sesión, recuperación de contraseñas, CRUD completo de productos y usuarios, búsquedas, filtros, chat y sistema de comentarios asociados a cada producto.<br>Uno de los aspectos más destacados del proyecto fue el intento de integración con servicios externos como Algolia (una IA) para recomendaciones automáticas de productos y MAUI Maps para incluir la ubicación geográfica de los vendedores dentro de la app. Aunque en algunos casos la integración no se logró finalizar debido a limitaciones de tiempo o recursos, se pudieron realizar múltiples pruebas y se adquirió experiencia significativa en la gestión de servicios externos.<br>Mi rol principal fue la construcción del backend (integración con la base de datos, validación de datos de entrada, creación de la API), la lógica del frontend (obtención y validación de datos de entrada y conexión con la API), realización de pruebas a la API y el despliegue de la aplicación en Azure y en un teléfono Android. Este proyecto me permitió consolidar conocimientos sobre arquitectura distribuida y despliegue en la nube, así como la gestión de equipos de desarrollo.",
+        "lenguajesProgrmacion": [6, 7, 1, 8],
+        "frameworkLibreria": [2, 7],
+        "herramientas": [4, 2],
+        "devopsInfraestructuraCloud": [2],
+        "github": {
+            "estado": true,
+            "texto": "Código",
+            "url": ""
+        },
+        "demoYT1": {
+            "estado": true,
+            "texto": "Demo YT 1",
+            "url": ""
+        },
+        "demoYT2": {
+            "estado": true,
+            "texto": "Demo YT 2",
+            "url": ""
+        },
+        "despliegues": {
+            "estado": false,
+            "texto": "Ver proyecto",
+            "url": ""
+        },
+        "prioridad": true
+    },
+    {
+        "id": 6,
+        "urlImagen": "../img/proyectos/portafolio_v2.png",
+        "nombre": "Portafolio Profesional v2",
+        "descripcion": "Este proyecto es la segunda versión de mi portafolio profesional, construido con el propósito de renovar el diseño, reorganizar la estructura general e incluir nuevas secciones como una presentación más visual de mis aptitudes, proyectos y logros. Construido como un proyecto personal, esta versión se actualiza cada cierto tiempo para mantenerse alineada con mis avances, incluyendo nuevas funcionalidades y posibles mejoras de diseño.<br>Al igual que con la versión anterior, desarrollé el portafolio como una aplicación dinámica, utilizando JSON, Axios y JQuery para el contenido automático y evitando tener los datos fijos en el código. Esto permite mantenerlo fácilmente y hacerlo escalable.<br>Este proyecto también fue una oportunidad para optimizar la organización interna de los archivos y mejorar la experiencia de navegación, convirtiéndolo en un punto clave para mi presencia profesional en línea.",
+        "lenguajesProgrmacion": [3, 4, 5],
+        "frameworkLibreria": [3, 4, 6],
+        "herramientas": [1],
+        "devopsInfraestructuraCloud": [1],
+        "github": {
+            "estado": true,
+            "texto": "Código",
+            "url": "https://github.com/SQuirosDev/SQuirosDev.github.io/tree/main/portafolio"
+        },
+        "demoYT1": {
+            "estado": false,
+            "texto": "Demo YT",
+            "url": ""
+        },
+        "demoYT2": {
+            "estado": false,
+            "texto": "Demo 2",
+            "url": ""
+        },
+        "despliegues": {
+            "estado": true,
+            "texto": "Ver proyecto",
+            "url": "https://squirosdev.github.io/portafolio/"
+        },
+        "prioridad": true
+    },
+    {
+        "id": 7,
+        "urlImagen": "../img/proyectos/app_inscripciones_curso_robotica.png",
+        "nombre": "Aplicación Web de Inscripción para Curso de Robótica",
+        "descripcion": "Este proyecto fue desarrollado como parte de mi trabajo comunal universitario (TCU), en el cual diseñamos tanto una página informativa como una aplicación web para gestionar las inscripciones del curso de robótica con Lego EV3. La plataforma permite a los estudiantes registrarse mediante un formulario, automáticamente enviar correos de confirmación y generar un documento Excel con los datos de los inscritos, este es enviado por correo a los correos indicados.<br>Además de las funciones transaccionales, el sitio incluye información detallada sobre el curso, docentes, preguntas frecuentes y otros datos relevantes para los estudiantes y sus familias. Esta aplicación fue creada para facilitar la gestión del curso y para automatizar los procesos iniciales del curso<br>Trabajé principalmente en la programación del backend, la creación de la base de datos y la lógica del frontend, implementando validaciones, conexión con la API y secuencias de notificación por correo electrónico. Con los aprendizajes de proyectos previos, este fue un reto fácil de llevar a cabo gracias al conocimiento y experiencia obtenida y se completó en aproximadamente dos semanas.",
+        "lenguajesProgrmacion": [6, 7, 1, 3, 4, 5],
+        "frameworkLibreria": [2, 5, 6],
+        "herramientas": [6, 2, 1],
+        "devopsInfraestructuraCloud": [],
+        "github": {
+            "estado": true,
+            "texto": "Código",
+            "url": ""
+        },
+        "demoYT1": {
+            "estado": true,
+            "texto": "Demo YT",
+            "url": ""
+        },
+        "demoYT2": {
+            "estado": false,
+            "texto": "Demo 2",
+            "url": ""
+        },
+        "despliegues": {
+            "estado": false,
+            "texto": "Ver proyecto",
+            "url": ""
+        },
+        "prioridad": true
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "urlImagen": "../img/certificados/python.png"
+    },
+    {
+        "id": 2,
+        "urlImagen": "../img/certificados/html.png"
+    },
+    {
+        "id": 3,
+        "urlImagen": "../img/certificados/js.png"
+    },
+    {
+        "id": 4,
+        "urlImagen": "../img/certificados/git.png"
+    },
+    {
+        "id": 5,
+        "urlImagen": "../img/certificados/sql.png"
+    },
+    {
+        "id": 6,
+        "urlImagen": "../img/certificados/ccna_1.png"
+    },
+    {
+        "id": 7,
+        "urlImagen": "../img/certificados/mvc.png"
+    },
+    {
+        "id": 8,
+        "urlImagen": "../img/certificados/ccna_2.png"
+    },
+    {
+        "id": 9,
+        "urlImagen": "../img/certificados/power_bi.png"
+    },
+    {
+        "id": 10,
+        "urlImagen": "../img/certificados/linux.png"
+    },
+    {
+        "id": 11,
+        "urlImagen": "../img/certificados/python_ds_ml.png"
+    }
+]

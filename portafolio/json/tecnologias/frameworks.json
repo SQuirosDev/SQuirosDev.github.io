@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "nombre": "Windows Forms App",
+        "urlImagen": "../img/frameworks_librerias/windows_forms_app.png",
+        "prioridad": false,
+        "categoria": "Frameworks y Librerias"
+    },
+    {
+        "id": 2,
+        "nombre": ".Net",
+        "urlImagen": "../img/frameworks_librerias/net.png",
+        "prioridad": true,
+        "categoria": "Frameworks y Librerias"
+    },
+    {
+        "id": 3,
+        "nombre": "Axios",
+        "urlImagen": "../img/frameworks_librerias/axios.png",
+        "prioridad": false,
+        "categoria": "Frameworks y Librerias" 
+    },
+    {
+        "id": 4,
+        "nombre": "jQuery",
+        "urlImagen": "../img/frameworks_librerias/jquery.png",
+        "prioridad": false,
+        "categoria": "Frameworks y Librerias" 
+    },
+    {
+        "id": 5,
+        "nombre": ".Net MVC",
+        "urlImagen": "../img/frameworks_librerias/net_mvc.png",
+        "prioridad": false,
+        "categoria": "Frameworks y Librerias"
+    },
+    {
+        "id": 6,
+        "nombre": "Bootstrap",
+        "urlImagen": "../img/frameworks_librerias/bootstrap.png",
+        "prioridad": false,
+        "categoria": "Frameworks y Librerias"
+    },
+    {
+        "id": 7,
+        "nombre": ".Net MAUI",
+        "urlImagen": "../img/frameworks_librerias/net_maui.png",
+        "prioridad": false,
+        "categoria": "Frameworks y Librerias"
+    }
+]
