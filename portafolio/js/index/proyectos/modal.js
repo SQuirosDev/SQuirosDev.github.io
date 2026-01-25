@@ -23,7 +23,7 @@ async function setupProjectModal() {
         if (pushUrl === undefined) pushUrl = true;
 
         titleNode.textContent = proy.nombre;
-        imgNode.src = proy.urlImagen;
+        imgNode.src = proy.urlImagen.replace(/^\.\.\//, "");
         imgNode.alt = proy.nombre;
         descNode.innerHTML = proy.descripcion;
 

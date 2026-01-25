@@ -30,7 +30,7 @@ function cartasEstructura(proyecto, monedasLP, monedasFL, monedasHI, monedasDIC)
         <button class="open-modal carta-boton-P" data-id="${proyecto.id}" onclick="setupProjectModal()">
             <div class="carta">
                 <div>
-                    <img class="carta-imagen-P" src="${proyecto.urlImagen}" alt="${proyecto.nombre}">
+                    <img class="carta-imagen-P" src="${proyecto.urlImagen.replace(/^\.\.\//, "")}" alt="${proyecto.nombre}">
                 </div>
                 <div class="carta-descripcion-P">
                     <p class="titulo-p tron-text">${proyecto.nombre}</p>
