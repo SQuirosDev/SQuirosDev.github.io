@@ -1,0 +1,63 @@
+.coin {
+    width: 110px; /* Tamaño de la moneda */
+    height: 110px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, #1e1f22 55%, #C8A165 100%);
+    /*background-color: #1e1f22;*/
+    border: 3px solid #C8A165; /* Borde dorado */
+    border-radius: 50%; /* Forma circular */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Sombra para profundidad */
+    perspective: 1000px; /* Necesario para 3D */
+}
+
+.coin-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+
+.coin:hover .coin-inner {
+    transform: rotateY(180deg);
+}
+
+.coin-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.front {
+    background: transparent;
+    color: white;
+}
+
+.back {
+    background: transparent;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.front img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain; /* Ajusta la imagen sin recortar */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 576px) { 
+    .coin{
+        width: 80px;;
+        height: 80px;
+    }
+}

@@ -42,12 +42,12 @@
         "github": {
             "estado": true,
             "texto": "Código",
-            "url": "https://github.com/SQuirosDev/Sistema-para-Restaurantes"
+            "url": "https://github.com/SQuirosDev/Restaurant-Management-Web-App"
         },
         "demoYT1": {
             "estado": true,
             "texto": "Demo YT",
-            "url": ""
+            "url": "https://youtu.be/_fTW1c5-Rr8?si=OJzXQzWyu8e3IHrd"
         },
         "demoYT2": {
             "estado": false,
