@@ -76,7 +76,7 @@
             "url": "https://github.com/SQuirosDev/Professional-Portfolio-v1"
         },
         "demoYT1": {
-            "estado": false,
+            "estado": true,
             "texto": "Demo 1",
             "url": "https://youtu.be/BruncxGx6m4?si=L0hggrEj7VhFJeOn"
         },
@@ -217,4 +217,5 @@
         "prioridad": true
     }
 ]
+
 
