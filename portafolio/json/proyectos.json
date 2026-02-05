@@ -73,12 +73,12 @@
         "github": {
             "estado": true,
             "texto": "Código",
-            "url": "https://github.com/SQuirosDev/Professional-Portfolio-v1"
+            "url": "https://github.com/SQuirosDev/SQuirosDev.github.io/tree/main/PortafolioV1"
         },
         "demoYT1": {
-            "estado": true,
+            "estado": false,
             "texto": "Demo 1",
-            "url": "https://youtu.be/BruncxGx6m4?si=L0hggrEj7VhFJeOn"
+            "url": ""
         },
         "demoYT2": {
             "estado": false,
@@ -88,7 +88,7 @@
         "despliegues": {
             "estado": true,
             "texto": "Ver proyecto",
-            "url": "https://squirosdev.github.io/PortafolioV1/"
+            "url": "https://squirosdev.github.io/Portafolio/"
         },
         "prioridad": false
     },
@@ -104,12 +104,12 @@
         "github": {
             "estado": true,
             "texto": "Código",
-            "url": "https://github.com/SQuirosDev/SQuirosDev.github.io/tree/main/Tree"
+            "url": "https://github.com/SQuirosDev/SQuirosDev.github.io/tree/main/LinkTree"
         },
         "demoYT1": {
-            "estado": false,
+            "estado": true,
             "texto": "Demo 1",
-            "url": ""
+            "url": "https://youtu.be/dDzvXziqOEM?si=u_9Q42quFOu-t8J_"
         },
         "demoYT2": {
             "estado": false,
@@ -135,12 +135,12 @@
         "github": {
             "estado": true,
             "texto": "Código",
-            "url": ""
+            "url": "https://github.com/SQuirosDev/E-Commerce-Mobile-App"
         },
         "demoYT1": {
             "estado": true,
             "texto": "Demo YT 1",
-            "url": ""
+            "url": "https://youtu.be/yXA1ESIHlZw?si=7Ou0UMTO3r4OBwN2"
         },
         "demoYT2": {
             "estado": true,
@@ -217,6 +217,3 @@
         "prioridad": true
     }
 ]
-
-
-
