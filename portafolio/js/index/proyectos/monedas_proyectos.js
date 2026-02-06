@@ -61,7 +61,7 @@ function monedasEstructuraProyectos(urlImagen, nombre){
         <div class="coin-P">
             <div class="coin-inner-P">
             <div class="coin-face-P front-P">
-                <img src="${urlImagen}" alt="${nombre}">
+                <img src="${urlImagen.replace(/^\.\.\//, "")}" alt="${nombre}">
             </div>
             <div class="coin-face-P back-P">
                 <span>${nombre}</span>

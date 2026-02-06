@@ -29,10 +29,16 @@ function cartasEstructura(proyecto, monedasLP, monedasFL, monedasHI, monedasDIC)
     return `
         <button class="open-modal project-card-btn" data-id="${proyecto.id}">
             <article class="project-card">
-                
+
                 <div class="project-image">
-                    <img src="${proyecto.urlImagen}" alt="${proyecto.nombre}">
+                    <img src="${proyecto.urlImagen.replace(/^\.\.\//, "")}" alt="${proyecto.nombre}">
                 </div>
+
+                ${proyecto.destacado ? `
+                    <div class="project-featured">
+                        PROYECTO DESTACADO
+                    </div>
+                ` : ''}
 
                 <div class="project-content">
                     <h3 class="tron-text-x-small">${proyecto.nombre}</h3>
