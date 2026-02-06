@@ -119,3 +119,21 @@ function monedasEstructura(urlImagen, nombre){
         </div>
     `
 }
+
+function cambiarCategoria(tipo, botonActivo) {
+    document.querySelectorAll('.tech-tab')
+        .forEach(tab => tab.classList.remove('active'));
+
+    const acciones = {
+        lp: mostrarMonedasLenguajesProgramacion,
+        fw: mostrarMonedasFrameworkLibrerias,
+        tools: mostrarMonedasHerramientasIDEs,
+        devops: mostrarMonedasDevOpsInfraestructura,
+        other: mostrarMonedasOtrasHabilidadesTecnicas
+    };
+
+    botonActivo.classList.add('active');
+    acciones[tipo]();
+}
+
+

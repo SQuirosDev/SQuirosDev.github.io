@@ -1,45 +1,37 @@
-/*-----------------------------------------------------------------------*/
-
-/*Tecnologias*/
-
-.contenedor-t{
+/* =========================================================
+   CONTENEDORES TECNOLOGÍAS
+   ========================================================= */
+.contenedor-t {
     width: 100%;
     min-height: 90vh;
-    background-color: #101010;
+    background-color: #0f0f0f;
     border-radius: 30px;
     margin-bottom: 14px;
-    padding: 15px;
+    padding: 16px;
 }
 
-.seccion-T { /*acomodar el contenedor de esta parte*/
+.seccion-T {
     width: 100%;
-    height: auto;
-    background-color: #101010;
+    background-color: #0f0f0f;
     border-radius: 30px;
     padding: 10px;
 }
 
-.flex-padre-T{ /*acomoda las monedas*/
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly !important;
-    flex-wrap: wrap;
-    margin-top: 0px;
-    padding: 24px; 
-}
-
-/*-----------------------------------------------------------------------*/
-
-/*Monedas*/
-
-.coin {
-    width: 110px; /* Tamaño de la moneda */
-    height: 110px;
+.flex-padre-T {
     display: flex;
     justify-content: center;
-    align-items: center;
-    border-radius: 50%; /* Forma circular */
-    perspective: 1000px; /* Necesario para 3D */
+    gap: 32px;
+    flex-wrap: wrap;
+    padding: 24px;
+}
+
+/* =========================================================
+   MONEDAS TECNOLOGÍAS (MISMO ESTILO QUE PROYECTOS)
+   ========================================================= */
+.coin {
+    width: 110px;
+    height: 110px;
+    perspective: 1000px;
 }
 
 .coin-inner {
@@ -47,75 +39,120 @@
     height: 100%;
     position: relative;
     transform-style: preserve-3d;
+    animation: auto-flip 10s infinite ease-in-out;
     transition: transform 0.8s;
 }
 
+/* =========================================================
+   CARAS DE LA MONEDA
+   ========================================================= */
 .coin-face {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
+    inset: 0;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    backface-visibility: hidden;
+    background: #1c1c1c;
+    border: 1px solid rgba(255,255,255,0.5);
+    color: #f1f1f1;
     overflow: hidden;
-    background-color: #1e1f22;
-    border: 3px solid #B0B0B0; /* Borde dorado */
-    box-shadow: 0 0 10px rgb(128, 128, 128); /* Sombra para profundidad */
-    transform-style: preserve-3d;
 }
 
+/* Cara frontal (logo) */
 .coin-face.front img {
     width: 60%;
     height: 60%;
     object-fit: contain;
 }
 
+/* Cara trasera (texto) */
 .coin-face.back {
     transform: rotateY(180deg);
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
-    padding: 10px;
+    padding: 12px;
     text-align: center;
-    color: #f1f1f1;
+    letter-spacing: 0.4px;
 }
 
-.coin-face.back span {
-    word-wrap: break-word;
-    max-width: 80%;
-}
-
-.coin-inner {
-  transform-style: preserve-3d;
-  animation: auto-flip 10s infinite ease-in-out;
-  transition: transform 0.8s; /* para hover */
-}
-
+/* =========================================================
+   ANIMACIÓN DE GIRO
+   ========================================================= */
 @keyframes auto-flip {
-  /* 0–20%: quieto en 0° */
-  0%, 20%   { transform: rotateY(0); }
+    0%, 20% {
+        transform: rotateY(0);
+    }
 
-  /* 20–40%: giro lento de 0° a 180° */
-  40%       { transform: rotateY(180deg); }
+    40% {
+        transform: rotateY(180deg);
+    }
 
-  /* 40–60%: quieto en 180° */
-  40%, 60%  { transform: rotateY(180deg); }
+    60% {
+        transform: rotateY(180deg);
+    }
 
-  /* 60–80%: vuelta lenta de 180° a 0° */
-  80%       { transform: rotateY(0); }
+    80% {
+        transform: rotateY(0);
+    }
 
-  /* 80–100%: quieto en 0° */
-  80%, 100% { transform: rotateY(0); }
+    100% {
+        transform: rotateY(0);
+    }
 }
 
-/*-----------------------------------------------------------------------*/
-
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
 @media (max-width: 780px) {
-    .coin{
-        width: 75px;;
+
+    .coin {
+        width: 75px;
         height: 75px;
-        
     }
+
+    .coin-face.back {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+
+
+.tech-selector {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+/* Tabs */
+.tech-tab {
+    padding: 10px 18px;
+    border-radius: 20px;
+
+    background-color: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.4);
+
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.95rem;
+
+    transition: all 0.25s ease;
+}
+
+/* Hover */
+.tech-tab:hover {
+    background-color: rgba(255,255,255,0.12);
+}
+
+/* Activo */
+.tech-tab.active {
+    box-shadow:
+        inset 0 0 5px #ffffff,
+        inset 0 0 5px #00e5ff,
+        0 0 4px #00e5ff,
+        0 0 8px #008bb2;
 }

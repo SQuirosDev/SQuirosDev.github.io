@@ -10,7 +10,7 @@
         "devopsInfraestructuraCloud": [],
         "github": {
             "estado": true,
-            "texto": "Código",
+            "texto": "Repositorio",
             "url": "https://github.com/SQuirosDev/Employee-Management-System"
         },
         "demoYT1": {
@@ -18,17 +18,13 @@
             "texto": "Demo YT",
             "url": "https://youtu.be/WJAkvEjW_1s?si=I64_yCrUhGeyTQE-"
         },
-        "demoYT2": {
-            "estado": false,
-            "texto": "Demo 2",
-            "url": ""
-        },
         "despliegues": {
             "estado": false,
-            "texto": "Ver proyecto",
+            "texto": "Despliegue",
             "url": ""
         },
-        "prioridad": false
+        "prioridad": false,
+        "destacado":false
     },
     {
         "id": 2,
@@ -41,7 +37,7 @@
         "devopsInfraestructuraCloud": [],
         "github": {
             "estado": true,
-            "texto": "Código",
+            "texto": "Repositorio",
             "url": "https://github.com/SQuirosDev/Restaurant-Management-Web-App"
         },
         "demoYT1": {
@@ -49,17 +45,13 @@
             "texto": "Demo YT",
             "url": "https://youtu.be/_fTW1c5-Rr8?si=OJzXQzWyu8e3IHrd"
         },
-        "demoYT2": {
-            "estado": false,
-            "texto": "Demo 2",
-            "url": ""
-        },
         "despliegues": {
             "estado": false,
-            "texto": "Ver proyecto",
+            "texto": "Despliegue",
             "url": ""
         },
-        "prioridad": false
+        "prioridad": false,
+        "destacado":false
     },
     {
         "id": 3,
@@ -72,25 +64,21 @@
         "devopsInfraestructuraCloud": [1],
         "github": {
             "estado": true,
-            "texto": "Código",
-            "url": "https://github.com/SQuirosDev/SQuirosDev.github.io/tree/main/PortafolioV1"
+            "texto": "Repositorio",
+            "url": "https://github.com/SQuirosDev/Professional-Portfolio-v1"
         },
         "demoYT1": {
-            "estado": false,
-            "texto": "Demo 1",
-            "url": ""
-        },
-        "demoYT2": {
-            "estado": false,
-            "texto": "Demo 2",
-            "url": ""
+            "estado": true,
+            "texto": "Demo YT",
+            "url": "https://youtu.be/BruncxGx6m4?si=NuN02RefWV26OxyX"
         },
         "despliegues": {
             "estado": true,
-            "texto": "Ver proyecto",
-            "url": "https://squirosdev.github.io/Portafolio/"
+            "texto": "Despliegue",
+            "url": "https://squirosdev.github.io/PortafolioV1/"
         },
-        "prioridad": false
+        "prioridad": false,
+        "destacado":false
     },
     {
         "id": 4,
@@ -103,25 +91,21 @@
         "devopsInfraestructuraCloud": [1],
         "github": {
             "estado": true,
-            "texto": "Código",
-            "url": "https://github.com/SQuirosDev/SQuirosDev.github.io/tree/main/LinkTree"
+            "texto": "Repositorio",
+            "url": "https://github.com/SQuirosDev/Link-Tree"
         },
         "demoYT1": {
             "estado": true,
-            "texto": "Demo 1",
+            "texto": "Demo YT",
             "url": "https://youtu.be/dDzvXziqOEM?si=u_9Q42quFOu-t8J_"
-        },
-        "demoYT2": {
-            "estado": false,
-            "texto": "Demo 2",
-            "url": ""
         },
         "despliegues": {
             "estado": true,
-            "texto": "Ver proyecto",
-            "url": "https://squirosdev.github.io/Tree/"
+            "texto": "Despliegue",
+            "url": "https://squirosdev.github.io/link_tree/"
         },
-        "prioridad": false
+        "prioridad": false,
+        "destacado":false
     },
     {
         "id": 5,
@@ -134,25 +118,21 @@
         "devopsInfraestructuraCloud": [2],
         "github": {
             "estado": true,
-            "texto": "Código",
+            "texto": "Repositorio",
             "url": "https://github.com/SQuirosDev/E-Commerce-Mobile-App"
         },
         "demoYT1": {
             "estado": true,
-            "texto": "Demo YT 1",
+            "texto": "Demo YT",
             "url": "https://youtu.be/yXA1ESIHlZw?si=7Ou0UMTO3r4OBwN2"
-        },
-        "demoYT2": {
-            "estado": true,
-            "texto": "Demo YT 2",
-            "url": ""
         },
         "despliegues": {
             "estado": false,
-            "texto": "Ver proyecto",
+            "texto": "Despliegue",
             "url": ""
         },
-        "prioridad": true
+        "prioridad": true,
+        "destacado":true
     },
     {
         "id": 6,
@@ -165,25 +145,21 @@
         "devopsInfraestructuraCloud": [1],
         "github": {
             "estado": true,
-            "texto": "Código",
-            "url": "https://github.com/SQuirosDev/SQuirosDev.github.io/tree/main/portafolio"
+            "texto": "Repositorio",
+            "url": "https://github.com/SQuirosDev/Professional-Portfolio-v2"
         },
         "demoYT1": {
-            "estado": false,
+            "estado": true,
             "texto": "Demo YT",
-            "url": ""
-        },
-        "demoYT2": {
-            "estado": false,
-            "texto": "Demo 2",
-            "url": ""
+            "url": "https://youtu.be/RG-EUUjVp8c?si=NN6aWuX9PllR8GtD"
         },
         "despliegues": {
             "estado": true,
-            "texto": "Ver proyecto",
+            "texto": "Despliegue",
             "url": "https://squirosdev.github.io/portafolio/"
         },
-        "prioridad": true
+        "prioridad": true,
+        "destacado":true
     },
     {
         "id": 7,
@@ -192,11 +168,11 @@
         "descripcion": "Este proyecto fue desarrollado como parte de mi trabajo comunal universitario (TCU), en el cual diseñamos tanto una página informativa como una aplicación web para gestionar las inscripciones del curso de robótica con Lego EV3. La plataforma permite a los estudiantes registrarse mediante un formulario, automáticamente enviar correos de confirmación y generar un documento Excel con los datos de los inscritos, este es enviado por correo a los correos indicados.<br>Además de las funciones transaccionales, el sitio incluye información detallada sobre el curso, docentes, preguntas frecuentes y otros datos relevantes para los estudiantes y sus familias. Esta aplicación fue creada para facilitar la gestión del curso y para automatizar los procesos iniciales del curso<br>Trabajé principalmente en la programación del backend, la creación de la base de datos y la lógica del frontend, implementando validaciones, conexión con la API y secuencias de notificación por correo electrónico. Con los aprendizajes de proyectos previos, este fue un reto fácil de llevar a cabo gracias al conocimiento y experiencia obtenida y se completó en aproximadamente dos semanas.",
         "lenguajesProgrmacion": [6, 7, 1, 3, 4, 5],
         "frameworkLibreria": [2, 5, 6],
-        "herramientas": [6, 2, 1],
+        "herramientas": [4, 2, 1],
         "devopsInfraestructuraCloud": [],
         "github": {
             "estado": true,
-            "texto": "Código",
+            "texto": "Repositorio",
             "url": ""
         },
         "demoYT1": {
@@ -204,16 +180,12 @@
             "texto": "Demo YT",
             "url": ""
         },
-        "demoYT2": {
-            "estado": false,
-            "texto": "Demo 2",
-            "url": ""
-        },
         "despliegues": {
             "estado": false,
-            "texto": "Ver proyecto",
+            "texto": "Despliegue",
             "url": ""
         },
-        "prioridad": true
+        "prioridad": true,
+        "destacado":true
     }
 ]

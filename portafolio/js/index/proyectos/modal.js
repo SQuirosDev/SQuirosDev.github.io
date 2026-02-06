@@ -1,145 +1,155 @@
 // ==============================================================================================
+// Modal de Proyectos (versión estable y sin bloqueos)
+// ==============================================================================================
 
-// Modal
+document.addEventListener('DOMContentLoaded', async () => {
 
-async function setupProjectModal() {
-    const proyectos = await cargarJSON('json/proyectos.json'); // obtenemos los datos
+    const proyectos = await cargarJSON('../json/proyectos.json');
 
-    // 2. Cachear elementos del DOM
-    const modal = document.getElementById('modal');
-    const btnCerrar = document.getElementById('modal-close');
-    const titleNode = document.getElementById('modal-title');
-    const imgNode = document.getElementById('modal-image');
-    const descNode = document.getElementById('modal-desc');
-    const contlp = document.getElementById('modal-lp');
-    const contfi = document.getElementById('modal-fl');
-    const conthi = document.getElementById('modal-hi');
-    const contdic = document.getElementById('modal-dic');
-    const buttonsCont = document.getElementById('modal-buttons');
+    const modal        = document.getElementById('modal');
+    const btnCerrar    = document.getElementById('modal-close');
+    const titleNode    = document.getElementById('modal-title');
+    const imgNode      = document.getElementById('modal-image');
+    const descNode     = document.getElementById('modal-desc');
+    const contlp       = document.getElementById('modal-lp');
+    const contfi       = document.getElementById('modal-fl');
+    const conthi       = document.getElementById('modal-hi');
+    const contdic      = document.getElementById('modal-dic');
+    const buttonsCont  = document.getElementById('modal-buttons');
 
-    // 3. Función para abrir modal
+    let modalAbierto = false;
+
+    // --------------------------------------------------
+    // Abrir modal
+    // --------------------------------------------------
     async function abrirModal(proy, pushUrl = true) {
-
-        if (pushUrl === undefined) pushUrl = true;
+        if (modalAbierto) return;
+        modalAbierto = true;
 
         titleNode.textContent = proy.nombre;
-        imgNode.src = proy.urlImagen.replace(/^\.\.\//, "");
+        imgNode.src = proy.urlImagen;
         imgNode.alt = proy.nombre;
         descNode.innerHTML = proy.descripcion;
 
-        // 1) Construir las monedas tecnologias
-        let monedasLPHtml = ""
-        let monedasfiHtml = ""
-        let monedashiHtml = ""
-        let monedasdicHtml = ""
+        limpiarTecnologias();
 
-        if (proy.lenguajesProgrmacion.length > 0){
-            const titulo = document.getElementById('modal-lp-titulo')
-            titulo.innerText = "Lenguajes de Programación"
-            monedasLPHtml = await mostrarMonedasLenguagesProgramacionProyectos(proy)
+        if (proy.lenguajesProgrmacion?.length) {
+            setTitulo('lp', 'Lenguajes de Programación');
+            contlp.innerHTML = await mostrarMonedasLenguagesProgramacionProyectos(proy);
         }
 
-        if (proy.frameworkLibreria.length > 0){
-            const titulo = document.getElementById('modal-fl-titulo')
-            titulo.innerText = "Frameworks"
-            monedasfiHtml = await mostrarMonedasFrameworksLibreriasProyectos(proy);
+        if (proy.frameworkLibreria?.length) {
+            setTitulo('fl', 'Frameworks');
+            contfi.innerHTML = await mostrarMonedasFrameworksLibreriasProyectos(proy);
         }
 
-        if (proy.herramientas.length > 0){
-            const titulo = document.getElementById('modal-hi-titulo')
-            titulo.innerText = "Herramientas"
-            monedashiHtml = await mostrarMonedasHerramientasIDEsProyectos(proy);
+        if (proy.herramientas?.length) {
+            setTitulo('hi', 'Herramientas');
+            conthi.innerHTML = await mostrarMonedasHerramientasIDEsProyectos(proy);
         }
 
-        if (proy.devopsInfraestructuraCloud.length > 0){
-            const titulo = document.getElementById('modal-dic-titulo');
-            titulo.innerText = "DevOps";
-            monedasdicHtml = await mostrarMonedasDevOpsInfraestructuraCloudProyectos(proy);
+        if (proy.devopsInfraestructuraCloud?.length) {
+            setTitulo('dic', 'DevOps');
+            contdic.innerHTML = await mostrarMonedasDevOpsInfraestructuraCloudProyectos(proy);
         }
-        
-        contlp.innerHTML = monedasLPHtml;
-        contfi.innerHTML = monedasfiHtml;
-        conthi.innerHTML = monedashiHtml;
-        contdic.innerHTML = monedasdicHtml;
 
-        // 3) Botones de acción
-        buttonsCont.innerHTML = '';  // limpia botones viejos
+        buttonsCont.innerHTML = '';
 
-        // lista de claves según tu estructura
-        const acciones = ['github', 'demoYT1', 'demoYT2', 'despliegues'];
-
-        for (const key of acciones) {
+        ['github', 'demoYT1', 'despliegues'].forEach(key => {
             const act = proy[key];
-            if (act.estado) {
+            if (act?.estado) {
                 const btn = document.createElement('a');
-                btn.className   = 'btn-action boton btn-mediano tron-boton text-center';
-                btn.href        = act.url;
-                btn.target      = '_blank';
+                btn.className = 'btn-action boton btn-mediano tron-boton text-center';
+                btn.href = act.url;
+                btn.target = '_blank';
                 btn.textContent = act.texto;
                 buttonsCont.appendChild(btn);
             }
-        }
+        });
 
-        // Mostrar y actualizar URL
         modal.classList.add('active');
+
         if (pushUrl) {
             history.pushState({ modalId: proy.id }, '', `?id=${proy.id}`);
         }
     }
 
-    // 4. Función para cerrar modal
+    // --------------------------------------------------
+    // Cerrar modal
+    // --------------------------------------------------
     function cerrarModal(pushUrl = true) {
-        const titulolp = document.getElementById('modal-lp-titulo')
-        const titulofi = document.getElementById('modal-fl-titulo')
-        const titulohi = document.getElementById('modal-hi-titulo')
-        const titulodic = document.getElementById('modal-dic-titulo');
-        
-        titulolp.innerText = ""
-        titulofi.innerText = ""
-        titulohi.innerText = ""
-        titulodic.innerText = ""
-        
+        if (!modalAbierto) return;
 
         modal.classList.remove('active');
+        modalAbierto = false;
+
         if (pushUrl) {
             history.pushState({}, '', window.location.pathname);
         }
     }
 
-    // 5. Eventos de apertura
-    document.querySelectorAll('.open-modal').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const id = parseInt(btn.dataset.id, 10);
-            const proy = proyectos.find(p => p.id === id);
-            if (proy) abrirModal(proy, true);
+    // --------------------------------------------------
+    // Helpers
+    // --------------------------------------------------
+    function limpiarTecnologias() {
+        ['lp', 'fl', 'hi', 'dic'].forEach(k => {
+            const titulo = document.getElementById(`modal-${k}-titulo`);
+            const cont   = document.getElementById(`modal-${k}`);
+            if (titulo) titulo.textContent = '';
+            if (cont) cont.innerHTML = '';
         });
+    }
+
+    function setTitulo(key, texto) {
+        const t = document.getElementById(`modal-${key}-titulo`);
+        if (t) t.textContent = texto;
+    }
+
+    // --------------------------------------------------
+    // Abrir desde proyectos
+    // --------------------------------------------------
+    document.addEventListener('click', e => {
+        const btn = e.target.closest('.open-modal');
+        if (!btn) return;
+
+        e.preventDefault();
+        const id = Number(btn.dataset.id);
+        const proy = proyectos.find(p => p.id === id);
+        if (proy) abrirModal(proy, true);
     });
 
-    // 6. Eventos de cierre
+    // --------------------------------------------------
+    // Cerrar eventos
+    // --------------------------------------------------
     btnCerrar.addEventListener('click', () => cerrarModal(true));
+
     modal.addEventListener('click', e => {
         if (e.target === modal) cerrarModal(true);
     });
 
-    // 7. Historial (Atrás/Adelante)
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') cerrarModal(true);
+    });
+
+    // --------------------------------------------------
+    // Historial
+    // --------------------------------------------------
     window.addEventListener('popstate', e => {
         const state = e.state;
-        if (state && state.modalId) {
-            const p = proyectos.find(p => p.id === state.modalId);
+        if (state?.modalId) {
+            const p = proyectos.find(pr => pr.id === state.modalId);
             if (p) abrirModal(p, false);
         } else {
             cerrarModal(false);
         }
     });
 
-    // 8. Abrir si hay ?id=… en la URL al cargar
-    const params = new URLSearchParams(window.location.search);
-    const initId = params.get('id');
+    // --------------------------------------------------
+    // Abrir por URL
+    // --------------------------------------------------
+    const initId = new URLSearchParams(window.location.search).get('id');
     if (initId) {
-        const p0 = proyectos.find(p => p.id === parseInt(initId, 10));
+        const p0 = proyectos.find(p => p.id === Number(initId));
         if (p0) abrirModal(p0, false);
     }
-}
-
-// Arrancar cuando el DOM esté listo
-document.addEventListener('DOMContentLoaded', setupProjectModal);
+});

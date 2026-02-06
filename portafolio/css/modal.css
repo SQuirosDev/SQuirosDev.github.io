@@ -1,0 +1,207 @@
+/* =========================
+   MODAL OVERLAY
+========================= */
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 9999;
+}
+
+.modal.active {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+}
+
+/* =========================
+   MODAL CONTENT
+========================= */
+.modal-content {
+    position: relative;
+    background: #0f0f0f;
+    color: #eaeaea;
+    width: 90%;
+    max-width: 820px;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+    animation: modalFadeUp 0.35s ease;
+}
+
+/* Animación suave */
+
+@keyframes modalFadeUp {
+    from {
+        transform: translateY(25px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* =========================
+   BOTÓN CERRAR
+========================= */
+.modal-close {
+    position: absolute;
+    top: 10px;
+    left: 18px;
+    background: transparent;
+    border: none;
+    color: #aaa;
+    font-size: 22px;
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.modal-close:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+/* =========================
+   IMAGEN
+========================= */
+#modal-image {
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+/* =========================
+   TÍTULO
+========================= */
+#modal-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+/* =========================
+   DESCRIPCIÓN
+========================= */
+#modal-desc {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #cfcfcf;
+}
+
+/* =========================
+   SECCIONES DE TECNOLOGÍAS
+========================= */
+.modal-coins {
+    margin-bottom: 30px;
+}
+
+.modal-coins p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 22px 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Contenedores de monedas */
+#modal-lp,
+#modal-fl,
+#modal-hi,
+#modal-dic {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* =========================
+   BOTONES DE ACCIÓN
+========================= */
+.modal-buttons {
+    margin-top: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.modal-buttons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px 20px;
+    min-width: 160px;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+
+    transition: transform 0.25s ease;
+}
+
+.modal-buttons a:hover {
+    transform: translateY(-2px);
+}
+/* =========================
+   SCROLLBAR MINIMAL
+========================= */
+.modal-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 600px) {
+    .modal-content {
+        padding: 22px;
+    }
+
+    #modal-title {
+        font-size: 1.4rem;
+    }
+
+    #modal-desc {
+        font-size: 0.9rem;
+    }
+
+    .modal-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modal-buttons a {
+        width: 100%;
+        max-width: 260px;
+        font-size: 0.9rem;
+        padding: 15px 20px;
+    }
+}

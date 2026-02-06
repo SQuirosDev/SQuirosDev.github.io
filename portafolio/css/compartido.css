@@ -1,3 +1,65 @@
+/* =========================
+   TIPOGRAFÍA GLOBAL
+========================= */
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    line-height: 1.25;
+}
+
+/* Jerarquía */
+h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1.15rem;
+}
+
+h5 {
+    font-size: 0.95rem;
+}
+
+h6 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+/* Paragraphs */
+p {
+    color: #cfcfcf;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.2s ease;
+}
+
+button {
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.2s ease;
+}
+
 /*-----------------------------------------------------------------------*/
 /*Navbar*/
 
@@ -74,7 +136,7 @@
 /*Footer*/
 
 footer {
-    background-color: #000;
+    background-color: #101010;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -93,19 +155,8 @@ footer .contenedor {
     padding: 0 20px;
 }
 
-footer h3 {
-    color: #C8A165;
-    margin-bottom: 10px;
-}
-
 footer nav{
     margin-bottom: 20px;
-}
-
-footer nav a {
-    color: #C8A165;
-    margin: 0 10px;
-    text-decoration: none;
 }
 
 .flex-padre-F{
@@ -120,9 +171,6 @@ footer .contact-info p {
     margin: 5px 0;
 }
 
-footer .contact-info span {
-    color: #C8A165;
-}
 
 footer .copyright {
     font-size: 14px;

@@ -27,35 +27,31 @@ async function mostrarCartasProyectos() {
 
 function cartasEstructura(proyecto, monedasLP, monedasFL, monedasHI, monedasDIC){
     return `
-        <button class="open-modal carta-boton-P" data-id="${proyecto.id}" onclick="setupProjectModal()">
-            <div class="carta">
-                <div>
-                    <img class="carta-imagen-P" src="${proyecto.urlImagen}" alt="${proyecto.nombre}">
+        <button class="open-modal project-card-btn" data-id="${proyecto.id}">
+            <article class="project-card">
+
+                <div class="project-image">
+                    <img src="${proyecto.urlImagen}" alt="${proyecto.nombre}">
                 </div>
-                <div class="carta-descripcion-P">
-                    <p class="titulo-p tron-text">${proyecto.nombre}</p>
-                </div>
-                <div class="carta-tecnologia-P">
-                    <div class="barra-scroll flex-padre-tecnologias-P">
+
+                ${proyecto.destacado ? `
+                    <div class="project-featured">
+                        PROYECTO DESTACADO
+                    </div>
+                ` : ''}
+
+                <div class="project-content">
+                    <h3 class="tron-text-x-small">${proyecto.nombre}</h3>
+
+                    <div class="project-tech">
                         ${monedasLP}
-                    </div>
-                </div>
-                <div class="carta-tecnologia-P">
-                    <div class="barra-scroll flex-padre-tecnologias-P">
                         ${monedasFL}
-                    </div>
-                </div>
-                <div class="carta-tecnologia-P">
-                    <div class="barra-scroll flex-padre-tecnologias-P">
                         ${monedasHI}
-                    </div>
-                </div>
-                <div class="carta-tecnologia-P">
-                    <div class="barra-scroll flex-padre-tecnologias-P">
                         ${monedasDIC}
                     </div>
                 </div>
-            </div>
+
+            </article>
         </button>
     `;
 }

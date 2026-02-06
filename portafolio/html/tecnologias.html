@@ -63,19 +63,14 @@
                     <!--Contenedor Full Screen-->
                     <div class="contenedor-t seccion-tamano tron-box d-flex flex-column text-center" id="HabilidadesYHerramientas">
 
-                        <div class="barra-scroll">
-                            <button class="barra-boton tron-text-x-small" style="border-radius: 23px 0 0 23px;" onclick="mostrarMonedasLenguajesProgramacion()">Lenguajes de Programación</button>
-                            <button class="barra-boton tron-text-x-small" onclick="mostrarMonedasFrameworkLibrerias()">Frameworks</button>
-                            <button class="barra-boton tron-text-x-small" onclick="mostrarMonedasHerramientasIDEs()">Herramientas</button>
-                            <button class="barra-boton tron-text-x-small" onclick="mostrarMonedasDevOpsInfraestructura()">DevOps</button>
-                            <button class="barra-boton tron-text-x-small" style="border-radius: 0 23px 23px 0;" onclick="mostrarMonedasOtrasHabilidadesTecnicas()">Otras Habilidades Técnicas</button>
+                        <div class="tech-selector">
+                            <button class="tech-tab active" onclick="cambiarCategoria('lp', this)">Lenguajes</button>
+                            <button class="tech-tab" onclick="cambiarCategoria('fw', this)">Frameworks</button>
+                            <button class="tech-tab" onclick="cambiarCategoria('tools', this)">Herramientas</button>
+                            <button class="tech-tab" onclick="cambiarCategoria('devops', this)">DevOps</button>
+                            <button class="tech-tab" onclick="cambiarCategoria('other', this)">Otras</button>
                         </div>
                         
-                        <div>
-                            <br>
-                            <p>Para ver las demás tecnologías, seleccione la opción que desee en la barra de botones. Puede desplazarse horizontalmente.</p>
-                        </div>
-
                         <!--Tecnologias-->
                         <div class="seccion-T d-flex justify-content-center align-items-center flex-column gap-3 flex-grow-1 my-auto">
 
