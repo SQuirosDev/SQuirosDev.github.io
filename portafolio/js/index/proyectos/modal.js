@@ -4,7 +4,7 @@
 
 document.addEventListener('DOMContentLoaded', async () => {
 
-    const proyectos = await cargarJSON('../json/proyectos.json');
+    const proyectos = await cargarJSON('json/proyectos.json');
 
     const modal        = document.getElementById('modal');
     const btnCerrar    = document.getElementById('modal-close');
