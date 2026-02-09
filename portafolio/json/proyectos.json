@@ -164,7 +164,7 @@
     {
         "id": 7,
         "urlImagen": "../img/proyectos/app_inscripciones_curso_robotica.png",
-        "nombre": "Aplicación Web de Inscripción para Curso de Robótica",
+        "nombre": "Aplicación Web de Inscripción para Curso",
         "descripcion": "Este proyecto fue desarrollado como parte de mi trabajo comunal universitario (TCU), en el cual diseñamos tanto una página informativa como una aplicación web para gestionar las inscripciones del curso de robótica con Lego EV3. La plataforma permite a los estudiantes registrarse mediante un formulario, automáticamente enviar correos de confirmación y generar un documento Excel con los datos de los inscritos, este es enviado por correo a los correos indicados.<br>Además de las funciones transaccionales, el sitio incluye información detallada sobre el curso, docentes, preguntas frecuentes y otros datos relevantes para los estudiantes y sus familias. Esta aplicación fue creada para facilitar la gestión del curso y para automatizar los procesos iniciales del curso<br>Trabajé principalmente en la programación del backend, la creación de la base de datos y la lógica del frontend, implementando validaciones, conexión con la API y secuencias de notificación por correo electrónico. Con los aprendizajes de proyectos previos, este fue un reto fácil de llevar a cabo gracias al conocimiento y experiencia obtenida y se completó en aproximadamente dos semanas.",
         "lenguajesProgrmacion": [6, 7, 1, 3, 4, 5],
         "frameworkLibreria": [2, 5, 6],
@@ -173,12 +173,12 @@
         "github": {
             "estado": true,
             "texto": "Repositorio",
-            "url": ""
+            "url": "https://github.com/SQuirosDev/Course-Registration-Web-App"
         },
         "demoYT1": {
             "estado": true,
             "texto": "Demo YT",
-            "url": ""
+            "url": "https://youtu.be/wzhUfG6OCHM?si=IbBOKWyMVqfGfYAY"
         },
         "despliegues": {
             "estado": false,
