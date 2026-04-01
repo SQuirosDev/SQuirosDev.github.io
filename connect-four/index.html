@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connect Four - Santiago Quiros</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="src/css/styles.css" />
+  </head>
+  <body>
+
+    <div class="scanlines"></div>
+
+    <main class="menu-wrap">
+
+      <div class="logo-block">
+        <span class="logo-eyebrow">Santiago Quiros Englis Proyect</span>
+        <h1 class="logo-title">CONNECT <span class="logo-accent">FOUR</span></h1>
+        <div class="logo-line"></div>
+      </div>
+
+      <div class="form-block">
+        <div class="input-row">
+          <div class="player-badge p1-badge">P1</div>
+          <input id="p1-input" class="name-input" type="text" placeholder="PLAYER ONE" maxlength="14" autocomplete="off" />
+          <div class="disc-preview disc-red"></div>
+        </div>
+        <div class="vs-divider">VS</div>
+        <div class="input-row">
+          <div class="player-badge p2-badge">P2</div>
+          <input id="p2-input" class="name-input" type="text" placeholder="PLAYER TWO" maxlength="14" autocomplete="off" />
+          <div class="disc-preview disc-yellow"></div>
+        </div>
+      </div>
+
+      <button id="btn-start" class="btn-start">
+        <span>PRESS START</span>
+      </button>
+
+    </main>
+
+    <script src="src/js/menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connect Four - Santiago Quiros</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="src/css/styles.css" />
+  </head>
+  <body class="game-body">
+
+    <div class="scanlines"></div>
+
+    <!-- HUD -->
+    <header class="hud">
+      <div class="hud-player" id="hud-p1">
+        <div class="disc-preview disc-red"></div>
+        <span id="hud-name-p1">PLAYER 1</span>
+      </div>
+      <div class="hud-center">
+        <div class="hud-turn-label">TURN</div>
+        <div class="turn-name" id="turn-name">—</div>
+      </div>
+      <div class="hud-player hud-right" id="hud-p2">
+        <span id="hud-name-p2">PLAYER 2</span>
+        <div class="disc-preview disc-yellow"></div>
+      </div>
+    </header>
+
+    <!-- Tablero -->
+    <main class="game-main">
+      <div class="board-shell">
+        <div id="col-hints" class="col-hints"></div>
+        <div id="board" class="board"></div>
+      </div>
+      <div class="game-controls">
+        <button id="btn-skip" class="btn-control btn-skip">⏭ SKIP TURN</button>
+        <button id="btn-quit" class="btn-control btn-quit">✕ END GAME</button>
+      </div>
+    </main>
+
+    <!-- Pop-up ganador -->
+    <div id="winner-overlay" class="overlay hidden">
+      <canvas id="confetti-canvas"></canvas>
+      <div class="winner-card">
+        <div class="winner-star">★</div>
+        <div class="winner-label" id="winner-label">WINNER</div>
+        <div class="winner-name" id="winner-name-text"></div>
+        <div class="winner-actions">
+          <button id="btn-replay" class="btn-action btn-primary-action">PLAY AGAIN</button>
+          <button id="btn-menu"   class="btn-action btn-ghost-action">MAIN MENU</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/js/game.js"></script>
+    <script src="src/js/ui.js"></script>
+    <script src="src/js/app.js"></script>
+  </body>
+</html>
