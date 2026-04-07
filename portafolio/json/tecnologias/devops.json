@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "nombre": "GitHub",
+        "urlImagen": "../img/devops_infraestructura_cloud/github.png",
+        "prioridad": true,
+        "categoria": "DevOps e Infraestructura Cloud"
+    },
+    {
+        "id": 2,
+        "nombre": "Azure",
+        "urlImagen": "../img/devops_infraestructura_cloud/azure.png",
+        "prioridad": false,
+        "categoria": "DevOps e Infraestructura Cloud"
+    }
+]

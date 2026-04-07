@@ -1,0 +1,39 @@
+/*-----------------------------------------------------------------------*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    overflow-y: scroll;
+    height: 100vh;              /* Asegura que el body sea contenedor de altura completa */
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+.contenedor-datos{
+    width: 80%; 
+    height: auto;
+    background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    border-radius: 30px;
+    backdrop-filter: blur(20px); /* Aplicar desenfoque */
+    border: rgba(255, 255, 255, 02); /* Borde transparente */
+    padding: 14px;
+}
+
+.seccion-tamano {
+    min-height: 90vh;
+}
+
+.margen-inferior{
+    margin-bottom: 14px;
+}
+
+/*-----------------------------------------------------------------------*/
+
+@media (max-width: 780px) {
+
+    .seccion-tamano {
+        height: auto;
+    }
+}
